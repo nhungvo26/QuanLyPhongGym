@@ -1,0 +1,9 @@
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DAL_QLPG\bin\Debug\DAL_QLPG.dll
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DAL_QLPG\bin\Debug\DAL_QLPG.pdb
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DAL_QLPG\bin\Debug\DTO_QLPG.dll
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DAL_QLPG\bin\Debug\DTO_QLPG.pdb
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.csproj.AssemblyReference.cache
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.csproj.CoreCompileInputs.cache
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.csproj.CopyComplete
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.dll
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.pdb

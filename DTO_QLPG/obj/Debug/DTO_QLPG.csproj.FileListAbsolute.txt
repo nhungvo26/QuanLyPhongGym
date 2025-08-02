@@ -1,0 +1,6 @@
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DTO_QLPG\bin\Debug\DTO_QLPG.dll
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DTO_QLPG\bin\Debug\DTO_QLPG.pdb
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.csproj.AssemblyReference.cache
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.csproj.CoreCompileInputs.cache
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.dll
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.pdb
