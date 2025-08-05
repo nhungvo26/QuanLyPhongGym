@@ -69,5 +69,25 @@ namespace GUI_QLPG
                 this.Close();
             }
         }
+        private void OpenForm(Form form)
+        {
+            pnMain.Controls.Clear();        //xóa form con cũ nếu có
+                                            //cấu hình form con
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            //thêm vào panel
+            pnMain.Controls.Add(form);
+            pnMain.Tag = form;
+            form.BringToFront();
+            form.Show();
+        }
+
+        private void btnLopHoc_Click(object sender, EventArgs e)
+        {
+            Form lophoc = new LopHoc();
+            OpenForm(lophoc);
+
+        }
     }
 }
