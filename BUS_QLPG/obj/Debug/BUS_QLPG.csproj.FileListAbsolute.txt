@@ -9,3 +9,14 @@ E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\BUS_QLPG\obj\Debug\BUS_QLPG.csp
 E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\BUS_QLPG\obj\Debug\BUS_QLPG.csproj.CopyComplete
 E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\BUS_QLPG\obj\Debug\BUS_QLPG.dll
 E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\BUS_QLPG\obj\Debug\BUS_QLPG.pdb
+D:\BTL_LTCSDL\QuanLyPhongGym\BUS_QLPG\bin\Debug\BUS_QLPG.dll
+D:\BTL_LTCSDL\QuanLyPhongGym\BUS_QLPG\bin\Debug\BUS_QLPG.pdb
+D:\BTL_LTCSDL\QuanLyPhongGym\BUS_QLPG\bin\Debug\DAL_QLPG.dll
+D:\BTL_LTCSDL\QuanLyPhongGym\BUS_QLPG\bin\Debug\DTO_QLPG.dll
+D:\BTL_LTCSDL\QuanLyPhongGym\BUS_QLPG\bin\Debug\DAL_QLPG.pdb
+D:\BTL_LTCSDL\QuanLyPhongGym\BUS_QLPG\bin\Debug\DTO_QLPG.pdb
+D:\BTL_LTCSDL\QuanLyPhongGym\BUS_QLPG\obj\Debug\BUS_QLPG.csproj.AssemblyReference.cache
+D:\BTL_LTCSDL\QuanLyPhongGym\BUS_QLPG\obj\Debug\BUS_QLPG.csproj.CoreCompileInputs.cache
+D:\BTL_LTCSDL\QuanLyPhongGym\BUS_QLPG\obj\Debug\BUS_QLPG.csproj.Up2Date
+D:\BTL_LTCSDL\QuanLyPhongGym\BUS_QLPG\obj\Debug\BUS_QLPG.dll
+D:\BTL_LTCSDL\QuanLyPhongGym\BUS_QLPG\obj\Debug\BUS_QLPG.pdb
