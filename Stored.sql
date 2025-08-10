@@ -51,8 +51,7 @@ CREATE PROCEDURE usp_ThemLopHoc
     @donGia DECIMAL(18,2),
     @ngayBatDau DATE,
     @ngayKetThuc DATE,
-    @moTa NVARCHAR(MAX),
-    --@idPhongTap INT
+    @moTa NVARCHAR(MAX)
 AS
 BEGIN
     INSERT INTO LopHoc (tenLopHoc, idTLLH, idHLV, lichHoc, soLuongHV, donGia, ngayBatDau, ngayKetThuc, moTa)
@@ -71,8 +70,8 @@ CREATE PROCEDURE usp_CapNhatLopHoc
     @donGia DECIMAL(18,2),
     @ngayBatDau DATE,
     @ngayKetThuc DATE,
-    @moTa NVARCHAR(MAX),
-    --@idPhongTap INT
+    @moTa NVARCHAR(MAX)
+   
 AS
 BEGIN
     UPDATE LopHoc
@@ -84,7 +83,7 @@ BEGIN
         donGia = @donGia,
         ngayBatDau = @ngayBatDau,
         ngayKetThuc = @ngayKetThuc,
-        moTa = @moTa,
+        moTa = @moTa
        -- idPhongTap = @idPhongTap
     WHERE idLopHoc = @idLopHoc;
 END
