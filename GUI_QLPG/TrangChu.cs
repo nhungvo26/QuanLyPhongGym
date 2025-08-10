@@ -71,14 +71,18 @@ namespace GUI_QLPG
         }
         private void OpenForm(Form form)
         {
-            pnMain.Controls.Clear();        //xóa form con cũ nếu có
-                                            //cấu hình form con
+            pnMain1.Controls.Clear(); //xóa form con cũ nếu có
+            pnMain1.Width = form.Width;
+            pnMain1.Height = form.Height;
+
+           
+            //cấu hình form con
             form.TopLevel = false;
             form.FormBorderStyle = FormBorderStyle.None;
             form.Dock = DockStyle.Fill;
             //thêm vào panel
-            pnMain.Controls.Add(form);
-            pnMain.Tag = form;
+            pnMain1.Controls.Add(form);
+            pnMain1.Tag = form;
             form.BringToFront();
             form.Show();
         }
@@ -89,5 +93,7 @@ namespace GUI_QLPG
             OpenForm(lophoc);
 
         }
+
+        
     }
 }

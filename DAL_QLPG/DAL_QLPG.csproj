@@ -42,7 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL_DangNhap.cs" />
+    <Compile Include="DAL_HLV.cs" />
+    <Compile Include="DAL_HocVien_LopHoc.cs" />
+    <Compile Include="DAL_LopHoc.cs" />
+    <Compile Include="DAL_TheLoai_LopHoc .cs" />
     <Compile Include="DBConnect.cs" />
+    <Compile Include="Helpers\TroGiupLich.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

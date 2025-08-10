@@ -36,7 +36,7 @@ namespace GUI_QLPG
                 NguoiDung ndDangNhap = new NguoiDung(username, password);
                 BUS_DangNhap busDangNhap = new BUS_DangNhap();
                 NguoiDung kq = busDangNhap.kiemTraDangNhap(ndDangNhap);
-                if(kq != null)
+                if (kq != null)
                 {
                     PhanQuyen.idNguoiDung = kq.idNguoiDung;
                     PhanQuyen.username = kq.username;
@@ -49,7 +49,7 @@ namespace GUI_QLPG
                     MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
@@ -57,7 +57,7 @@ namespace GUI_QLPG
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();
             }
