@@ -15,9 +15,10 @@ namespace DTO_QLPG
         public DateTime? ngaySinh { get; set; }
         public string sdt { get; set; }
         public string email { get; set; }
+        public string diaChi { get; set; }
         public string username { get; set; }
         public string password { get; set; }
-        public string vaiTro { get; set; }  
+        public string vaiTro { get; set; }
 
         public NguoiDung() { }
 

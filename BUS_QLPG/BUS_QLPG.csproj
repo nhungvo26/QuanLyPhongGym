@@ -42,6 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS_DangNhap.cs" />
+    <Compile Include="BUS_HLV.cs" />
+    <Compile Include="BUS_HocVien_LopHoc.cs" />
+    <Compile Include="BUS_LopHoc.cs" />
+    <Compile Include="BUS_TheLoai_LopHoc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

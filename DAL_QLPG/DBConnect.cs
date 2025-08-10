@@ -11,7 +11,7 @@ namespace DAL_QLPG
     public class DBConnect
     {
         //Tao chuoi ket noi co so du lieu
-        private string conStr = "Data Source=NHUNGVO;Initial Catalog=QlGym;Integrated Security=True";  
+        private string conStr = "Data Source=DESKTOP-3K2TQHI;Initial Catalog=QlGym;Integrated Security=True";  
         public SqlConnection conn; 
 
         //Phuong thuc khoi tao

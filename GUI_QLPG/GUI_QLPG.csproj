@@ -46,12 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChonHocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChonHocVien.Designer.cs">
+      <DependentUpon>ChonHocVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\DataGridViewStyleHelper.cs" />
     <Compile Include="HocVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,11 +104,17 @@
     <Compile Include="TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChonHocVien.resx">
+      <DependentUpon>ChonHocVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LopHoc.resx">
       <DependentUpon>LopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +126,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ThongKeBaoCao.resx">
+      <DependentUpon>ThongKeBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +150,10 @@
       <Project>{25abd1a7-fcfb-4447-a629-9deb42638c2f}</Project>
       <Name>BUS_QLPG</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAL_QLPG\DAL_QLPG.csproj">
+      <Project>{65820FF8-9B8E-40EC-9B22-83ACC1390EA8}</Project>
+      <Name>DAL_QLPG</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTO_QLPG\DTO_QLPG.csproj">
       <Project>{24e6cea6-0b5f-4cf7-881d-be9e622f2645}</Project>
       <Name>DTO_QLPG</Name>
@@ -141,6 +161,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Dark Minimalist Gym Center Promo Facebook Post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timkiem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timkiem1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dark Minimalist Gym Center Promo Facebook Post1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

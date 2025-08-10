@@ -45,6 +45,7 @@ namespace GUI_QLPG
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnMain = new System.Windows.Forms.Panel();
+            this.pnMain1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -66,9 +67,9 @@ namespace GUI_QLPG
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 37);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(267, 826);
+            this.panel2.Size = new System.Drawing.Size(267, 802);
             this.panel2.TabIndex = 1;
             // 
             // btnLogout
@@ -82,7 +83,7 @@ namespace GUI_QLPG
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.Aqua;
             this.btnLogout.Location = new System.Drawing.Point(20, 759);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(227, 42);
             this.btnLogout.TabIndex = 13;
@@ -101,7 +102,7 @@ namespace GUI_QLPG
             this.btnThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongBao.ForeColor = System.Drawing.Color.Aqua;
             this.btnThongBao.Location = new System.Drawing.Point(20, 636);
-            this.btnThongBao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThongBao.Margin = new System.Windows.Forms.Padding(4);
             this.btnThongBao.Name = "btnThongBao";
             this.btnThongBao.Size = new System.Drawing.Size(227, 42);
             this.btnThongBao.TabIndex = 12;
@@ -119,7 +120,7 @@ namespace GUI_QLPG
             this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongKe.ForeColor = System.Drawing.Color.Aqua;
             this.btnThongKe.Location = new System.Drawing.Point(20, 575);
-            this.btnThongKe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(4);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(227, 42);
             this.btnThongKe.TabIndex = 11;
@@ -137,7 +138,7 @@ namespace GUI_QLPG
             this.btnNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhanVien.ForeColor = System.Drawing.Color.Aqua;
             this.btnNhanVien.Location = new System.Drawing.Point(20, 513);
-            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(227, 42);
             this.btnNhanVien.TabIndex = 10;
@@ -155,7 +156,7 @@ namespace GUI_QLPG
             this.btnThietBi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThietBi.ForeColor = System.Drawing.Color.Aqua;
             this.btnThietBi.Location = new System.Drawing.Point(20, 452);
-            this.btnThietBi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThietBi.Margin = new System.Windows.Forms.Padding(4);
             this.btnThietBi.Name = "btnThietBi";
             this.btnThietBi.Size = new System.Drawing.Size(227, 42);
             this.btnThietBi.TabIndex = 9;
@@ -173,7 +174,7 @@ namespace GUI_QLPG
             this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanhToan.ForeColor = System.Drawing.Color.Aqua;
             this.btnThanhToan.Location = new System.Drawing.Point(20, 390);
-            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(4);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(227, 42);
             this.btnThanhToan.TabIndex = 8;
@@ -191,7 +192,7 @@ namespace GUI_QLPG
             this.btnHocVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHocVien.ForeColor = System.Drawing.Color.Aqua;
             this.btnHocVien.Location = new System.Drawing.Point(20, 329);
-            this.btnHocVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHocVien.Margin = new System.Windows.Forms.Padding(4);
             this.btnHocVien.Name = "btnHocVien";
             this.btnHocVien.Size = new System.Drawing.Size(227, 42);
             this.btnHocVien.TabIndex = 7;
@@ -209,7 +210,7 @@ namespace GUI_QLPG
             this.btnLopHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLopHoc.ForeColor = System.Drawing.Color.Aqua;
             this.btnLopHoc.Location = new System.Drawing.Point(20, 267);
-            this.btnLopHoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLopHoc.Margin = new System.Windows.Forms.Padding(4);
             this.btnLopHoc.Name = "btnLopHoc";
             this.btnLopHoc.Size = new System.Drawing.Size(227, 42);
             this.btnLopHoc.TabIndex = 7;
@@ -228,7 +229,7 @@ namespace GUI_QLPG
             this.btnTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrangChu.ForeColor = System.Drawing.Color.Aqua;
             this.btnTrangChu.Location = new System.Drawing.Point(20, 206);
-            this.btnTrangChu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTrangChu.Margin = new System.Windows.Forms.Padding(4);
             this.btnTrangChu.Name = "btnTrangChu";
             this.btnTrangChu.Size = new System.Drawing.Size(227, 42);
             this.btnTrangChu.TabIndex = 7;
@@ -254,7 +255,7 @@ namespace GUI_QLPG
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(80, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(107, 98);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -267,9 +268,9 @@ namespace GUI_QLPG
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1179, 37);
+            this.panel1.Size = new System.Drawing.Size(1370, 37);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -287,24 +288,35 @@ namespace GUI_QLPG
             // 
             // pnMain
             // 
-            this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnMain.AutoSize = true;
+            this.pnMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnMain.Location = new System.Drawing.Point(267, 37);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(912, 826);
+            this.pnMain.Size = new System.Drawing.Size(0, 0);
             this.pnMain.TabIndex = 2;
+            // 
+            // pnMain1
+            // 
+            this.pnMain1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnMain1.Location = new System.Drawing.Point(267, 37);
+            this.pnMain1.Name = "pnMain1";
+            this.pnMain1.Size = new System.Drawing.Size(1103, 802);
+            this.pnMain1.TabIndex = 3;
             // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1179, 863);
+            this.ClientSize = new System.Drawing.Size(1370, 839);
+            this.Controls.Add(this.pnMain1);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GYM STUDIO";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TrangChu_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -312,6 +324,7 @@ namespace GUI_QLPG
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -332,5 +345,6 @@ namespace GUI_QLPG
         private System.Windows.Forms.Button btnHocVien;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel pnMain;
+        private System.Windows.Forms.Panel pnMain1;
     }
 }

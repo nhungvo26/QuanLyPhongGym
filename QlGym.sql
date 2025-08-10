@@ -73,7 +73,7 @@ CREATE TABLE PhongTap (
 		idPhongTap int IDENTITY(1,1) PRIMARY KEY,
 		tenPhongTap nvarchar(20),
 		viTri nvarchar(20),
-		trangThai nvarchar(20) DEFAULT N'Trống' CHECK (trangThai IN (N'Trống', N'Đang sử dụng', N'Đang bảo trì')),	
+		trangThai nvarchar(20) DEFAULT N'Trống' CHECK (trangThai IN (N'Trống', N'Đang sử dụng', N'Đang bảo trì'))
 )
 GO
 
@@ -103,16 +103,17 @@ CREATE TABLE LopHoc (
 		ngayBatDau datetime,
 		ngayKetThuc datetime,
 		moTa nvarchar(50),
-		idPhongTap int FOREIGN KEY REFERENCES PhongTap(idPhongTap),
+		--idPhongTap int FOREIGN KEY REFERENCES PhongTap(idPhongTap),
 		CHECK(ngayKetThuc > ngayBatDau) 
 )
 GO
 
 ---------------NHẬP DỮ LIỆU---------------
 INSERT INTO LopHoc VALUES 
-    (N'Yoga A', 1, 4, N'Wed 08:00-10:00; Thu 08:00-10:00', 20, 200000, '2025-10-01', '2025-12-11', N'Lớp yoga dành cho mọi người.', 1),
-    (N'HLV hướng dẫn tập luyện theo nhóm', 2 , 4, N'Mon 18:00-19:30; Thu 18:00-19:30', 10, 500000, '2025-07-28', '2025-09-04', N'Chương trình tập luyện theo nhóm.', 2)
+    (N'Yoga A', 1, 4, N'Wed 08:00-10:00; Thu 08:00-10:00', 20, 200000, '2025-10-01', '2025-12-11', N'Lớp yoga dành cho mọi người.'),
+    (N'HLV hướng dẫn tập luyện theo nhóm', 2 , 4, N'Mon 18:00-19:30; Thu 18:00-19:30', 10, 500000, '2025-07-28', '2025-09-04', N'Chương trình tập luyện theo nhóm.')
 GO
+
 
 ---------------BẢNG HỌC VIÊN---------------
 CREATE TABLE HocVien (
