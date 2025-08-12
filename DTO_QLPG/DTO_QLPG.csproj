@@ -45,9 +45,13 @@
     <Compile Include="DTO_LopHoc.cs" />
     <Compile Include="DTO_StudentCountByMonth.cs" />
     <Compile Include="DTO_StudentRatioByCategory.cs" />
+    <Compile Include="HocVien.cs" />
     <Compile Include="NguoiDung.cs" />
+    <Compile Include="PhongTap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TheLoaiLopHoc.cs" />
+    <Compile Include="TheLoaiThietBi.cs" />
+    <Compile Include="ThietBi.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

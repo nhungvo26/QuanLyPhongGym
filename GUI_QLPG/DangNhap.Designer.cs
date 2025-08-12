@@ -55,26 +55,24 @@ namespace GUI_QLPG
             // 
             this.txtUsername.BackColor = System.Drawing.Color.Snow;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(54, 175);
             this.txtUsername.MaxLength = 20;
-            this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(255, 32);
-            this.txtUsername.TabIndex = 0;
+            this.txtUsername.Size = new System.Drawing.Size(255, 31);
+            this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.Snow;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(54, 260);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(54, 261);
             this.txtPassword.MaxLength = 20;
-            this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(255, 32);
-            this.txtPassword.TabIndex = 0;
+            this.txtPassword.Size = new System.Drawing.Size(255, 31);
+            this.txtPassword.TabIndex = 2;
             // 
             // btnLogin
             // 
@@ -91,7 +89,7 @@ namespace GUI_QLPG
             this.btnLogin.Location = new System.Drawing.Point(54, 364);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(120, 32);
-            this.btnLogin.TabIndex = 2;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -123,7 +121,7 @@ namespace GUI_QLPG
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Snow;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(305, 261);
+            this.pictureBox3.Location = new System.Drawing.Point(305, 262);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(30, 30);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,11 +131,11 @@ namespace GUI_QLPG
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Aqua;
             this.label2.Location = new System.Drawing.Point(132, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 24);
+            this.label2.Size = new System.Drawing.Size(155, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "GYM STUDIO";
             // 
@@ -145,11 +143,11 @@ namespace GUI_QLPG
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightCyan;
-            this.label1.Location = new System.Drawing.Point(54, 156);
+            this.label1.Location = new System.Drawing.Point(51, 147);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 18);
+            this.label1.Size = new System.Drawing.Size(165, 25);
             this.label1.TabIndex = 6;
             this.label1.Text = "Tên đăng nhập:";
             // 
@@ -157,11 +155,11 @@ namespace GUI_QLPG
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightCyan;
-            this.label3.Location = new System.Drawing.Point(54, 239);
+            this.label3.Location = new System.Drawing.Point(51, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 18);
+            this.label3.Size = new System.Drawing.Size(108, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Mật khẩu:";
             // 
@@ -169,11 +167,11 @@ namespace GUI_QLPG
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.LightCyan;
             this.checkBox1.Location = new System.Drawing.Point(54, 309);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 20);
+            this.checkBox1.Size = new System.Drawing.Size(91, 24);
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Ghi nhớ";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -182,11 +180,11 @@ namespace GUI_QLPG
             // 
             this.ckbShowPassword.AutoSize = true;
             this.ckbShowPassword.BackColor = System.Drawing.Color.Transparent;
-            this.ckbShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbShowPassword.ForeColor = System.Drawing.Color.LightCyan;
             this.ckbShowPassword.Location = new System.Drawing.Point(210, 309);
             this.ckbShowPassword.Name = "ckbShowPassword";
-            this.ckbShowPassword.Size = new System.Drawing.Size(125, 20);
+            this.ckbShowPassword.Size = new System.Drawing.Size(144, 24);
             this.ckbShowPassword.TabIndex = 7;
             this.ckbShowPassword.Text = "Hiện mật khẩu";
             this.ckbShowPassword.UseVisualStyleBackColor = false;
@@ -247,7 +245,7 @@ namespace GUI_QLPG
             this.btnExit.Location = new System.Drawing.Point(215, 364);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(120, 32);
-            this.btnExit.TabIndex = 2;
+            this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);

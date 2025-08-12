@@ -60,11 +60,11 @@
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\DataGridViewStyleHelper.cs" />
-    <Compile Include="HocVien.cs">
+    <Compile Include="GUI_HocVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HocVien.Designer.cs">
-      <DependentUpon>HocVien.cs</DependentUpon>
+    <Compile Include="GUI_HocVien.Designer.cs">
+      <DependentUpon>GUI_HocVien.cs</DependentUpon>
     </Compile>
     <Compile Include="LopHoc.cs">
       <SubType>Form</SubType>
@@ -87,11 +87,11 @@
     <Compile Include="ThanhToan.Designer.cs">
       <DependentUpon>ThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThietBi.cs">
+    <Compile Include="GUI_ThietBi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThietBi.Designer.cs">
-      <DependentUpon>ThietBi.cs</DependentUpon>
+    <Compile Include="GUI_ThietBi.Designer.cs">
+      <DependentUpon>GUI_ThietBi.cs</DependentUpon>
     </Compile>
     <Compile Include="ThongKe.cs">
       <SubType>Form</SubType>
@@ -111,8 +111,11 @@
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HocVien.resx">
-      <DependentUpon>HocVien.cs</DependentUpon>
+    <EmbeddedResource Include="GUI_HocVien.resx">
+      <DependentUpon>GUI_HocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ThietBi.resx">
+      <DependentUpon>GUI_ThietBi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LopHoc.resx">
       <DependentUpon>LopHoc.cs</DependentUpon>

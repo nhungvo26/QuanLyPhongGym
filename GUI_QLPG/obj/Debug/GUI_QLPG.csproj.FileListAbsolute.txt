@@ -40,3 +40,9 @@ D:\BTL_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.NhanVien.resources
 D:\BTL_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.ChonHocVien.resources
 D:\BTL_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.HocVien.resources
 D:\BTL_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.ThongKe.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.ChonHocVien.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.GUI_HocVien.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.LopHoc.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.NhanVien.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.ThongKe.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.GUI_ThietBi.resources

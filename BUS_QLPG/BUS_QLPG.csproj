@@ -43,10 +43,12 @@
   <ItemGroup>
     <Compile Include="BUS_DangNhap.cs" />
     <Compile Include="BUS_HLV.cs" />
+    <Compile Include="BUS_HocVien.cs" />
     <Compile Include="BUS_HocVien_LopHoc.cs" />
     <Compile Include="BUS_LopHoc.cs" />
     <Compile Include="BUS_NhanVien.cs" />
     <Compile Include="BUS_TheLoai_LopHoc.cs" />
+    <Compile Include="BUS_ThietBi.cs" />
     <Compile Include="BUS_ThongKe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -106,5 +106,15 @@ namespace GUI_QLPG
             OpenForm(thongke);
 
         }
+
+        private void btnHocVien_Click(object sender, EventArgs e)
+        {
+            OpenForm(new GUI_HocVien());
+        }
+
+        private void btnThietBi_Click(object sender, EventArgs e)
+        {
+            OpenForm(new GUI_ThietBi());
+        }
     }
 }
