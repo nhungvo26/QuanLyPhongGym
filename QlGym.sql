@@ -1,8 +1,8 @@
 ﻿IF NOT EXISTS (SELECT name FROM sys.databases WHERE name ='QLGym')
-CREATE DATABASE QlGym
+CREATE DATABASE QLGym
 GO
  
-USE QlGym
+USE QLGym
 GO
 
 ---------------BẢNG NGƯỜI DÙNG---------------
@@ -72,19 +72,18 @@ GO*/
 CREATE TABLE PhongTap (
 		idPhongTap int IDENTITY(1,1) PRIMARY KEY,
 		tenPhongTap nvarchar(20),
-		viTri nvarchar(20),
 		trangThai nvarchar(20) DEFAULT N'Trống' CHECK (trangThai IN (N'Trống', N'Đang sử dụng', N'Đang bảo trì')),	
 )
 GO
 
 ---------------NHẬP DỮ LIỆU---------------
 INSERT INTO PhongTap VALUES 
-(N'Phòng A',N'Phòng 1, Tầng 1',N'Trống'),
-(N'Phòng B',N'Phòng 2, Tầng 1',N'Đang sử dụng'),
-(N'Phòng C',N'Phòng 3, Tầng 1',N'Đang bảo trì'),
-(N'Phòng D',N'Phòng 1, Tầng 2',N'Trống'),
-(N'Phòng E',N'Phòng 2, Tầng 2',N'Trống'),
-(N'Phòng F',N'Phòng 3, Tầng 2',N'Đang sử dụng')
+(N'Phòng A', N'Trống'),
+(N'Phòng B', N'Đang sử dụng'),
+(N'Phòng C', N'Đang bảo trì'),
+(N'Phòng D', N'Trống'),
+(N'Phòng E', N'Trống'),
+(N'Phòng F', N'Đang sử dụng')
 GO
 
 ---------------XEM BẢNG PHÒNG TẬP---------------
@@ -188,17 +187,32 @@ CREATE TABLE TheLoai_ThietBi (
 )
 GO
 
+---------------NHẬP DỮ LIỆU---------------
+INSERT INTO TheLoai_ThietBi VALUES 
+(N'Thiết bị cơ bản'), (N'Thiết bị tập nhóm cơ'), (N'Thiết bị tập thể lực'), (N'Thiết bị khác')
+GO
+
 ---------------BẢNG THIẾT BỊ---------------
 CREATE TABLE ThietBi (
 		idThietBi int IDENTITY(1,1) PRIMARY KEY,
 		tenThietBi nvarchar(20),
 		donGia decimal CHECK(donGia >= 0),
-		soLuongHV int,
 		ngayMua datetime,
 		trangThai nvarchar(20) DEFAULT N'Tốt' CHECK (trangThai IN (N'Tốt', N'Cần bảo trì', N'Hư hỏng')),	
 		idTLTB int FOREIGN KEY REFERENCES TheLoai_ThietBi(idTLTB),
 		idPhongTap int FOREIGN KEY REFERENCES PhongTap(idPhongTap)
 )
+GO
+
+---------------NHẬP DỮ LIỆU---------------
+INSERT INTO ThietBi VALUES 
+    (N'Thanh tạ đòn', 800000, '2024-02-10',N'Tốt', 1, 5),
+    (N'Tạ cầm tay', 300000 , '2023-12-20',N'Cần bảo trì', 1, 6),
+	(N'Máy chạy bộ', 5000000, '2024-04-29',N'Tốt', 3, 4),
+    (N'Dây nhảy', 100000, '2025-03-25',N'Tốt', 4, 1),
+    (N'Bóng', 200000, '2025-03-19',N'Tốt', 4, 1),
+    (N'Máy đẩy ngực ngang', 4000000, '2025-05-12',N'Tốt', 2, 2),
+	(N'Máy tập ép ngực', 3000000, '2025-07-09',N'Hư hỏng', 2, 6)
 GO
 
 ---------------BẢNG BẢO TRÌ---------------
@@ -208,4 +222,9 @@ CREATE TABLE BaoTri (
 		ngayBaoTri datetime,
 		trangThai nvarchar(20) DEFAULT N'Đang bảo trì' CHECK (trangThai IN (N'Đang bảo trì', N'Hoàn tất'))
 )
+GO
+
+---------------NHẬP DỮ LIỆU---------------
+INSERT INTO BaoTri VALUES 
+    (7, '2025-07-12', N'Đang bảo trì')
 GO

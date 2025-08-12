@@ -21,14 +21,14 @@ namespace GUI_QLPG
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text.Trim();
-            string password = txtPassword.Text;
+            string username = txtTenDangNhap.Text.Trim();
+            string password = txtMatKhau.Text;
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Username và Password không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Tên đăng nhập và Mật khẩu không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             try
@@ -36,7 +36,7 @@ namespace GUI_QLPG
                 NguoiDung ndDangNhap = new NguoiDung(username, password);
                 BUS_DangNhap busDangNhap = new BUS_DangNhap();
                 NguoiDung kq = busDangNhap.kiemTraDangNhap(ndDangNhap);
-                if(kq != null)
+                if (kq != null)
                 {
                     PhanQuyen.idNguoiDung = kq.idNguoiDung;
                     PhanQuyen.username = kq.username;
@@ -49,28 +49,28 @@ namespace GUI_QLPG
                     MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnThoat_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();
             }
         }
 
-        private void ckbShowPassword_CheckedChanged(object sender, EventArgs e)
+        private void ckbHienMatKhau_CheckedChanged(object sender, EventArgs e)
         {
-            txtPassword.PasswordChar = ckbShowPassword.Checked ? '\0' : '*';
+            txtMatKhau.PasswordChar = ckbHienMatKhau.Checked ? '\0' : '*';
         }
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-            this.AcceptButton = btnLogin;
+            this.AcceptButton = btnDangNhap;
         }
     }
 }

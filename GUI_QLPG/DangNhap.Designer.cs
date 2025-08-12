@@ -30,9 +30,9 @@ namespace GUI_QLPG
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.btnDangNhap = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -40,61 +40,59 @@ namespace GUI_QLPG
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.ckbShowPassword = new System.Windows.Forms.CheckBox();
+            this.ckbHienMatKhau = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtUsername
+            // txtTenDangNhap
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.Snow;
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(54, 175);
-            this.txtUsername.MaxLength = 20;
-            this.txtUsername.Multiline = true;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(255, 32);
-            this.txtUsername.TabIndex = 0;
+            this.txtTenDangNhap.BackColor = System.Drawing.Color.Snow;
+            this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDangNhap.Location = new System.Drawing.Point(54, 175);
+            this.txtTenDangNhap.MaxLength = 20;
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Size = new System.Drawing.Size(255, 31);
+            this.txtTenDangNhap.TabIndex = 1;
             // 
-            // txtPassword
+            // txtMatKhau
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.Snow;
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(54, 260);
-            this.txtPassword.MaxLength = 20;
-            this.txtPassword.Multiline = true;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(255, 32);
-            this.txtPassword.TabIndex = 0;
+            this.txtMatKhau.BackColor = System.Drawing.Color.Snow;
+            this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Location = new System.Drawing.Point(54, 261);
+            this.txtMatKhau.MaxLength = 20;
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(255, 31);
+            this.txtMatKhau.TabIndex = 2;
             // 
-            // btnLogin
+            // btnDangNhap
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Turquoise;
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Turquoise;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnLogin.Location = new System.Drawing.Point(54, 364);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(120, 32);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Đăng nhập";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnDangNhap.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnDangNhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDangNhap.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnDangNhap.FlatAppearance.BorderSize = 0;
+            this.btnDangNhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Turquoise;
+            this.btnDangNhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Turquoise;
+            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.ForeColor = System.Drawing.Color.Black;
+            this.btnDangNhap.Location = new System.Drawing.Point(54, 364);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(125, 35);
+            this.btnDangNhap.TabIndex = 3;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // pictureBox1
             // 
@@ -133,11 +131,11 @@ namespace GUI_QLPG
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Aqua;
-            this.label2.Location = new System.Drawing.Point(132, 98);
+            this.label2.Location = new System.Drawing.Point(125, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 24);
+            this.label2.Size = new System.Drawing.Size(155, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "GYM STUDIO";
             // 
@@ -145,11 +143,11 @@ namespace GUI_QLPG
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightCyan;
-            this.label1.Location = new System.Drawing.Point(54, 156);
+            this.label1.Location = new System.Drawing.Point(51, 150);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 18);
+            this.label1.Size = new System.Drawing.Size(160, 24);
             this.label1.TabIndex = 6;
             this.label1.Text = "Tên đăng nhập:";
             // 
@@ -157,11 +155,11 @@ namespace GUI_QLPG
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightCyan;
-            this.label3.Location = new System.Drawing.Point(54, 239);
+            this.label3.Location = new System.Drawing.Point(51, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 18);
+            this.label3.Size = new System.Drawing.Size(100, 24);
             this.label3.TabIndex = 6;
             this.label3.Text = "Mật khẩu:";
             // 
@@ -169,28 +167,28 @@ namespace GUI_QLPG
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.LightCyan;
             this.checkBox1.Location = new System.Drawing.Point(54, 309);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 20);
+            this.checkBox1.Size = new System.Drawing.Size(91, 24);
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Ghi nhớ";
             this.checkBox1.UseVisualStyleBackColor = false;
             // 
-            // ckbShowPassword
+            // ckbHienMatKhau
             // 
-            this.ckbShowPassword.AutoSize = true;
-            this.ckbShowPassword.BackColor = System.Drawing.Color.Transparent;
-            this.ckbShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbShowPassword.ForeColor = System.Drawing.Color.LightCyan;
-            this.ckbShowPassword.Location = new System.Drawing.Point(210, 309);
-            this.ckbShowPassword.Name = "ckbShowPassword";
-            this.ckbShowPassword.Size = new System.Drawing.Size(125, 20);
-            this.ckbShowPassword.TabIndex = 7;
-            this.ckbShowPassword.Text = "Hiện mật khẩu";
-            this.ckbShowPassword.UseVisualStyleBackColor = false;
-            this.ckbShowPassword.CheckedChanged += new System.EventHandler(this.ckbShowPassword_CheckedChanged);
+            this.ckbHienMatKhau.AutoSize = true;
+            this.ckbHienMatKhau.BackColor = System.Drawing.Color.Transparent;
+            this.ckbHienMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbHienMatKhau.ForeColor = System.Drawing.Color.LightCyan;
+            this.ckbHienMatKhau.Location = new System.Drawing.Point(210, 309);
+            this.ckbHienMatKhau.Name = "ckbHienMatKhau";
+            this.ckbHienMatKhau.Size = new System.Drawing.Size(144, 24);
+            this.ckbHienMatKhau.TabIndex = 7;
+            this.ckbHienMatKhau.Text = "Hiện mật khẩu";
+            this.ckbHienMatKhau.UseVisualStyleBackColor = false;
+            this.ckbHienMatKhau.CheckedChanged += new System.EventHandler(this.ckbHienMatKhau_CheckedChanged);
             // 
             // panel1
             // 
@@ -199,7 +197,7 @@ namespace GUI_QLPG
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.ckbShowPassword);
+            this.panel1.Controls.Add(this.ckbHienMatKhau);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
@@ -207,10 +205,10 @@ namespace GUI_QLPG
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btnExit);
-            this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.txtPassword);
-            this.panel1.Controls.Add(this.txtUsername);
+            this.panel1.Controls.Add(this.btnThoat);
+            this.panel1.Controls.Add(this.btnDangNhap);
+            this.panel1.Controls.Add(this.txtMatKhau);
+            this.panel1.Controls.Add(this.txtTenDangNhap);
             this.panel1.Location = new System.Drawing.Point(70, 50);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 416);
@@ -232,25 +230,25 @@ namespace GUI_QLPG
             this.panel2.Size = new System.Drawing.Size(280, 2);
             this.panel2.TabIndex = 8;
             // 
-            // btnExit
+            // btnThoat
             // 
-            this.btnExit.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Turquoise;
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Turquoise;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.Location = new System.Drawing.Point(215, 364);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(120, 32);
-            this.btnExit.TabIndex = 2;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnThoat.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThoat.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnThoat.FlatAppearance.BorderSize = 0;
+            this.btnThoat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Turquoise;
+            this.btnThoat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Turquoise;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.Color.Black;
+            this.btnThoat.Location = new System.Drawing.Point(215, 364);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(125, 35);
+            this.btnThoat.TabIndex = 4;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // DangNhap
             // 
@@ -277,9 +275,9 @@ namespace GUI_QLPG
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.TextBox txtTenDangNhap;
+        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -287,11 +285,11 @@ namespace GUI_QLPG
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox ckbShowPassword;
+        private System.Windows.Forms.CheckBox ckbHienMatKhau;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnThoat;
     }
 }
 

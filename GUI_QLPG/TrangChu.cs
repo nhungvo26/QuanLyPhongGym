@@ -59,7 +59,7 @@ namespace GUI_QLPG
             }
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+        private void btnDangXuat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
@@ -69,10 +69,11 @@ namespace GUI_QLPG
                 this.Close();
             }
         }
+
         private void OpenForm(Form form)
         {
             pnMain.Controls.Clear();        //xóa form con cũ nếu có
-                                            //cấu hình form con
+            //cấu hình form con
             form.TopLevel = false;
             form.FormBorderStyle = FormBorderStyle.None;
             form.Dock = DockStyle.Fill;
@@ -87,7 +88,16 @@ namespace GUI_QLPG
         {
             Form lophoc = new LopHoc();
             OpenForm(lophoc);
+        }
 
+        private void btnThietBi_Click(object sender, EventArgs e)
+        {
+            OpenForm(new GUI_ThietBi());
+        }
+
+        private void btnHocVien_Click(object sender, EventArgs e)
+        {
+            OpenForm(new GUI_HocVien());
         }
     }
 }

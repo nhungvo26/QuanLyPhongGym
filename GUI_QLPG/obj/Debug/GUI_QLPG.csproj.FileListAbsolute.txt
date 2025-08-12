@@ -36,3 +36,7 @@ D:\BTL_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.csproj.Up2Date
 D:\BTL_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.exe
 D:\BTL_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.pdb
 D:\BTL_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.LopHoc.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.LopHoc.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.ThanhToan.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.GUI_ThietBi.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.GUI_HocVien.resources
