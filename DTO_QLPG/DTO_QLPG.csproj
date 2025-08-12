@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="DTO_HLV.cs" />
     <Compile Include="DTO_LopHoc.cs" />
+    <Compile Include="DTO_StudentCountByMonth.cs" />
+    <Compile Include="DTO_StudentRatioByCategory.cs" />
     <Compile Include="NguoiDung.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TheLoaiLopHoc.cs" />

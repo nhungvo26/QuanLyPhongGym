@@ -14,18 +14,20 @@ CREATE TABLE NguoiDung (
 		ngaySinh datetime,
 		sdt varchar(10),
 		email nvarchar(50) UNIQUE NOT NULL,
+		diaChi nvarchar(50),
 		username nvarchar(20) UNIQUE NOT NULL,
 		password nvarchar(20) NOT NULL,
 		vaiTro nvarchar(20) NOT NULL CHECK (vaiTro IN (N'Chủ phòng gym', N'Lễ tân', N'Nhân viên kỹ thuật', N'Huấn luyện viên'))
 )
 GO
 
+
 ---------------NHẬP DỮ LIỆU---------------
 INSERT INTO NguoiDung VALUES 
-(N'Trần', N'Quốc Bảo', N'Nam', '1994-02-22', '0338471934', N'admin@gmail.com', N'admin', N'Admin@123', N'Chủ phòng gym'),
-(N'Võ', N'Đan Thi', N'Nữ', '1996-05-10', '0988428576', N'letan@gmail.com', N'letan', N'Letan@123', N'Lễ tân'),
-(N'Nguyễn', N'Tuyết Băng', N'Nữ', '1995-12-09', '0388477979', N'nvkt@gmail.com', N'nvkt', N'Nvkt@123', N'Nhân viên kỹ thuật'),
-(N'Phạm', N'Đức', N'Nam', '1998-06-17', '0338538589', N'hlv@gmail.com', N'hlv', N'Hlv@123', N'Huấn luyện viên')
+(N'Trần', N'Quốc Bảo', N'Nam', '1994-02-22', '0338471934', N'admin@gmail.com','TP. Hồ Chí Minh', N'admin', N'Admin@123' ,N'Chủ phòng gym'),
+(N'Võ', N'Đan Thi', N'Nữ', '1996-05-10', '0988428576', N'letan@gmail.com','An Giang', N'letan', N'Letan@123', N'Lễ tân'),
+(N'Nguyễn', N'Tuyết Băng', N'Nữ', '1995-12-09', '0388477979', N'nvkt@gmail.com','An Giang', N'nvkt', N'Nvkt@123', N'Nhân viên kỹ thuật'),
+(N'Phạm', N'Đức', N'Nam', '1998-06-17', '0338538589', N'hlv@gmail.com','An Giang', N'hlv', N'Hlv@123', N'Huấn luyện viên')
 GO
 
 ---------------XEM BẢNG NGƯỜI DÙNG---------------

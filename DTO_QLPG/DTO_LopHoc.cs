@@ -35,5 +35,10 @@ namespace DTO_QLPG
             this.moTa = moTa;
             this.idPhongTap = idPhongTap;
         }
+        public class StudentCountByCategory
+        {
+            public string CategoryName { get; set; }
+            public int StudentCount { get; set; }
+        }
     }
 }

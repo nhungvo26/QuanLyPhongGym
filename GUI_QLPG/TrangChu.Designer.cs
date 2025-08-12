@@ -126,6 +126,7 @@ namespace GUI_QLPG
             this.btnThongKe.TabIndex = 11;
             this.btnThongKe.Text = "Thống kê-Báo cáo";
             this.btnThongKe.UseVisualStyleBackColor = false;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnNhanVien
             // 
@@ -144,6 +145,7 @@ namespace GUI_QLPG
             this.btnNhanVien.TabIndex = 10;
             this.btnNhanVien.Text = "Nhân viên";
             this.btnNhanVien.UseVisualStyleBackColor = false;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
             // 
             // btnThietBi
             // 
