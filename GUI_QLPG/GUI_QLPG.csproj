@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -92,11 +93,11 @@
     <Compile Include="ThietBi.Designer.cs">
       <DependentUpon>ThietBi.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongKeBaoCao.cs">
+    <Compile Include="ThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThongKeBaoCao.Designer.cs">
-      <DependentUpon>ThongKeBaoCao.cs</DependentUpon>
+    <Compile Include="ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
@@ -109,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HocVien.resx">
+      <DependentUpon>HocVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LopHoc.resx">
       <DependentUpon>LopHoc.cs</DependentUpon>
@@ -126,8 +130,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ThongKeBaoCao.resx">
-      <DependentUpon>ThongKeBaoCao.cs</DependentUpon>
+    <EmbeddedResource Include="ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>

@@ -77,6 +77,7 @@ namespace GUI_QLPG.Helpers
                 dataGridView.Columns[nameof(NguoiDung.username)].HeaderText = "Tên đăng nhập";
                 dataGridView.Columns[nameof(NguoiDung.hoNguoiDung)].HeaderText = "Họ";
                 dataGridView.Columns[nameof(NguoiDung.tenNguoiDung)].HeaderText = "Tên";
+                dataGridView.Columns[nameof(NguoiDung.gioiTinh)].HeaderText = "Giới tính";
                 dataGridView.Columns[nameof(NguoiDung.ngaySinh)].HeaderText = "Ngày sinh";
                 dataGridView.Columns[nameof(NguoiDung.sdt)].HeaderText = "Số điện thoại";
                 dataGridView.Columns[nameof(NguoiDung.email)].HeaderText = "Email";

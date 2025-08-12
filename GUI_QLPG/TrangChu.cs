@@ -93,7 +93,18 @@ namespace GUI_QLPG
             OpenForm(lophoc);
 
         }
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            Form nhanvien = new NhanVien();
+            OpenForm(nhanvien);
 
-        
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            Form thongke = new ThongKe();
+            OpenForm(thongke);
+
+        }
     }
 }

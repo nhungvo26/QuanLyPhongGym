@@ -19,6 +19,13 @@ namespace DTO_QLPG
         public string username { get; set; }
         public string password { get; set; }
         public string vaiTro { get; set; }
+        public string FullName
+        {
+            get
+            {
+                return $"{hoNguoiDung} {tenNguoiDung}".Trim();
+            }
+        }
 
         public NguoiDung() { }
 
