@@ -141,7 +141,7 @@ CREATE TABLE HocVien_LopHoc (
 		idHocVien int FOREIGN KEY REFERENCES HocVien(idHocVien) ON DELETE CASCADE,
 		idLopHoc int FOREIGN KEY REFERENCES LopHoc(idLopHoc) ON DELETE CASCADE,
 		ngayDangKy datetime DEFAULT GETDATE(),
-		trangThai nvarchar(20) DEFAULT N'Đang hoạt động' CHECK (trangThai IN (N'Đang hoạt động', N'Đã hủy')),	
+		trangThai nvarchar(20) DEFAULT N'Đang hoạt động' CHECK (trangThai IN (N'Đang hoạt động', N'Đã hủy'))
 )
 GO
 

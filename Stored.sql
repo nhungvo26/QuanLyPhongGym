@@ -113,6 +113,26 @@ END
 GO
 
 ---------------HỌC VIÊN---------------
+
+--- LẤY HỌC VIÊN THEO LỚP----
+CREATE PROCEDURE usp_LayHocVienTheoLop
+    @idLopHoc INT
+AS
+BEGIN
+    SELECT hv.idHocVien,
+           hv.tenHocVien,
+           hv.ngaySinh,
+           hv.gioiTinh,
+           hv.sdt,
+		   hv.email,
+		   hv.diaChi,
+           hv.ngayThamGia
+       
+    FROM HocVien hv
+    INNER JOIN HocVien_LopHoc hvlh ON hv.idHocVien = hvlh.idHocVien
+    WHERE hvlh.idLopHoc = @idLopHoc;
+END
+GO
 ---------------XEM HỌC VIÊN---------------
 CREATE PROC XemHocVien
 AS
@@ -172,6 +192,17 @@ AS
 BEGIN	
 	SELECT * FROM HocVien
 	WHERE tenHocVien LIKE N'%' + @tuKhoa + '%'
+END
+GO
+---- LẤY HV CHƯA CÓ LỚP-------
+CREATE PROCEDURE sp_GetHocVienChuaCoLop
+AS
+BEGIN
+    SELECT hv.*
+    FROM HocVien hv
+    LEFT JOIN HocVien_LopHoc hv_lh 
+        ON hv.idHocVien = hv_lh.idHocVien
+    WHERE hv_lh.idHocVien IS NULL;
 END
 GO
 
@@ -262,6 +293,56 @@ BEGIN
     WHERE idLopHoc = @idLopHoc;
 END
 GO
+----KIỂM TRA SĨ SỐ---
+
+--- THÊM HỌC VIÊN VÀO LỚP HỌC ---
+CREATE PROCEDURE usp_ThemHocVienVaoLop
+    @idHocVien INT,
+    @idLopHoc INT,
+    @ResultCode INT OUTPUT -- 0: OK, 1: Lớp đầy, 2: Đã tồn tại
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @soLuongToiDa INT;
+    DECLARE @soLuongHienTai INT;
+
+    -- Lấy số lượng tối đa
+    SELECT @soLuongToiDa = soLuongHV
+    FROM LopHoc
+    WHERE idLopHoc = @idLopHoc;
+
+    -- Số lượng hiện tại
+    SELECT @soLuongHienTai = COUNT(*)
+    FROM HocVien_LopHoc
+    WHERE idLopHoc = @idLopHoc AND trangThai = N'Đang hoạt động';
+
+    -- Nếu đủ số lượng
+    IF @soLuongHienTai >= @soLuongToiDa
+    BEGIN
+        SET @ResultCode = 1; -- Lớp đầy
+        RETURN;
+    END
+
+    -- Nếu học viên đã có trong lớp
+    IF EXISTS (
+        SELECT 1 
+        FROM HocVien_LopHoc 
+        WHERE idHocVien = @idHocVien AND idLopHoc = @idLopHoc
+    )
+    BEGIN
+        SET @ResultCode = 2; -- Đã tồn tại
+        RETURN;
+    END
+
+    -- Thêm học viên
+    INSERT INTO HocVien_LopHoc (idHocVien, idLopHoc, ngayDangKy, trangThai)
+    VALUES (@idHocVien, @idLopHoc, GETDATE(), N'Đang hoạt động');
+
+    SET @ResultCode = 0; -- Thành công
+END
+GO
+
 --- HLV--
 CREATE PROCEDURE LayDanhSachHuanLuyenVien
 AS

@@ -617,6 +617,36 @@ namespace GUI_QLPG
 
             }
         }
+        private void dgvClass_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (isSelectLopHoc && e.RowIndex >= 0)
+            {
+                int idLopHoc = Convert.ToInt32(dgvClass.Rows[e.RowIndex].Cells["idLopHoc"].Value);
+                LoadHocVienTheoLop(idLopHoc);
+            }
+        }
+
+        private void LoadHocVienTheoLop(int idLopHoc)
+        {
+            try
+            {
+                BUS_HocVien busHocVien = new BUS_HocVien();
+                DataTable dtHocVien = busHocVien.LayHocVienTheoLop(idLopHoc);
+
+                dgvClass.DataSource = dtHocVien;
+                dgvClass.Columns["SelectColumn"].Visible = true;
+
+                DataGridViewStyleHelper.FormatStudentDGV(dgvClass);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+
+
+      
+
         private void SearchClasses()
         {
             string keyword = txtTimKiem.Text.Trim().ToLower();
@@ -712,5 +742,31 @@ namespace GUI_QLPG
             SearchClasses();
         }
 
+        private void btnThemHV_Click(object sender, EventArgs e)
+        {
+            List<int> selectedClassId = new List<int>();
+            foreach (DataGridViewRow row in dgvClass.Rows)
+            {
+                bool isChecked = Convert.ToBoolean(row.Cells["SelectColumn"].Value);
+                if (isChecked)
+                {
+                    int classId = Convert.ToInt32(row.Cells["idLopHoc"].Value);
+                    selectedClassId.Add(classId);
+                }
+            }
+            if (selectedClassId.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn ít nhất một lớp để thêm học viên.");
+                return;
+            }
+            Form student = new ChonHocVien(selectedClassId);
+            if (student.ShowDialog() == DialogResult.OK)
+            {
+                LoadLopHoc();
+                MessageBox.Show("Danh sách học viên đã được cập nhật.");
+            }
+        }
+
+        
     }
 }

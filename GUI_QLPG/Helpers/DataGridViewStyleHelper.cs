@@ -46,17 +46,17 @@ namespace GUI_QLPG.Helpers
         }
         public static void FormatStudentDGV(DataGridView dataGridView)
         {
-
-            dataGridView.Columns["StudentId"].HeaderText = "Mã học viên";
-            dataGridView.Columns["FullName"].HeaderText = "Họ tên học viên";
-            dataGridView.Columns["DOB"].HeaderText = "Ngày sinh";
-            dataGridView.Columns["Gender"].HeaderText = "Giới tính";
-            dataGridView.Columns["Phone"].HeaderText = "Số điện thoại";
-            dataGridView.Columns["Email"].HeaderText = "Email";
-            dataGridView.Columns["Address"].HeaderText = "Địa chỉ";
-            dataGridView.Columns["RegisteredDate"].HeaderText = "Ngày đăng ký";
+            dataGridView.Columns["idHocVien"].HeaderText = "Mã học viên";
+            dataGridView.Columns["tenHocVien"].HeaderText = "Họ tên học viên";
+            dataGridView.Columns["ngaySinh"].HeaderText = "Ngày sinh";
+            dataGridView.Columns["gioiTinh"].HeaderText = "Giới tính";
+            dataGridView.Columns["sdt"].HeaderText = "Số điện thoại";
+            dataGridView.Columns["email"].HeaderText = "Email";
+            dataGridView.Columns["diaChi"].HeaderText = "Địa chỉ";
+            dataGridView.Columns["ngayThamGia"].HeaderText = "Ngày đăng ký";
             dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
         public static void FormatMembershipDGV(DataGridView dataGridView)
         {
             dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

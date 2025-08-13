@@ -99,5 +99,25 @@ namespace DAL_QLPG
                 throw ex;
             }
         }
+        public DataTable layHocVienChuaCoLop()
+        {
+            try
+            {
+                // Không có tham số nên để null
+                return GetDataTable("sp_GetHocVienChuaCoLop", null);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public DataTable LayHocVienTheoLop(int idLopHoc)
+        {
+            SqlParameter[] para = {
+                new SqlParameter("@idLopHoc", idLopHoc)
+            };
+            return GetDataTable("usp_LayHocVienTheoLop", para);
+        }
     }
 }
+

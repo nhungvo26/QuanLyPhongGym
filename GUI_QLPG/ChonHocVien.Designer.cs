@@ -82,12 +82,13 @@
             this.btQuaylai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btQuaylai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQuaylai.ForeColor = System.Drawing.Color.Red;
-            this.btQuaylai.Location = new System.Drawing.Point(603, 5);
+            this.btQuaylai.Location = new System.Drawing.Point(660, 3);
             this.btQuaylai.Name = "btQuaylai";
             this.btQuaylai.Size = new System.Drawing.Size(120, 43);
             this.btQuaylai.TabIndex = 0;
             this.btQuaylai.Text = "Quay lại";
             this.btQuaylai.UseVisualStyleBackColor = false;
+            this.btQuaylai.Click += new System.EventHandler(this.btQuaylai_Click);
             // 
             // btnOK
             // 
@@ -95,12 +96,13 @@
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOK.Location = new System.Drawing.Point(393, 5);
+            this.btnOK.Location = new System.Drawing.Point(444, 5);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(120, 43);
             this.btnOK.TabIndex = 0;
             this.btnOK.Text = "Thêm";
             this.btnOK.UseVisualStyleBackColor = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // panel3
             // 
@@ -112,6 +114,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1178, 63);
             this.panel3.TabIndex = 1;
+         
             // 
             // btTimKiemHVTrongLop
             // 
@@ -152,6 +155,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "ChonHocVien";
             this.Text = "ChonHocVien";
+            this.Load += new System.EventHandler(this.ChonHocVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocVien)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

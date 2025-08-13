@@ -359,6 +359,7 @@ namespace GUI_QLPG
             this.btnThemHV.TabIndex = 0;
             this.btnThemHV.Text = "Thêm HV vào lớp";
             this.btnThemHV.UseVisualStyleBackColor = false;
+            this.btnThemHV.Click += new System.EventHandler(this.btnThemHV_Click);
             // 
             // btnXoaSach
             // 
@@ -912,6 +913,7 @@ namespace GUI_QLPG
             this.dgvClass.RowTemplate.Height = 24;
             this.dgvClass.Size = new System.Drawing.Size(1496, 404);
             this.dgvClass.TabIndex = 1;
+            this.dgvClass.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClass_CellClick);
             // 
             // SelectColumn
             // 

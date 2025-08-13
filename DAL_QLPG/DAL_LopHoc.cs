@@ -11,51 +11,10 @@ namespace DAL_QLPG
 {
     public class DAL_LopHoc : DBConnect
     {
-        // Lấy tất cả lớp học
-        //public List<DTO_LopHoc> LayTatCaLopHoc()
-        //{
-        //    List<DTO_LopHoc> dsLop = new List<DTO_LopHoc>();
-
-        //    try
-        //    {
-        //        conn.Open();
-        //        SqlCommand cmd = new SqlCommand("usp_LayTatCaLopHoc", conn);
-        //        cmd.CommandType = CommandType.StoredProcedure;
-
-        //        SqlDataReader dr = cmd.ExecuteReader();
-        //        while (dr.Read())
-        //        {
-        //            DTO_LopHoc lop = new DTO_LopHoc
-        //            {
-        //                idLopHoc = Convert.ToInt32(dr["idLopHoc"]),
-        //                tenLopHoc = dr["tenLopHoc"].ToString(),
-        //                idTLLH = Convert.ToInt32(dr["idTLLH"]),
-        //                idHLV = Convert.ToInt32(dr["idHLV"]),
-        //                lichHoc = dr["lichHoc"].ToString(),
-        //                soLuongHV = Convert.ToInt32(dr["soLuongHV"]),
-        //                donGia = Convert.ToDecimal(dr["donGia"]),
-        //                ngayBatDau = Convert.ToDateTime(dr["ngayBatDau"]),
-        //                ngayKetThuc = Convert.ToDateTime(dr["ngayKetThuc"]),
-        //                moTa = dr["moTa"].ToString(),
-        //                //idPhongTap = Convert.ToInt32(dr["idPhongTap"])
-        //            };
-        //            dsLop.Add(lop);
-        //        }
-        //        dr.Close();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    finally
-        //    {
-        //        conn.Close();
-        //    }
-
-        //    return dsLop;
-        //}
+  
         public List<DTO_LopHoc> LayTatCaLopHoc()
         {
+            DAL_HocVien_LopHoc dalHV_LopHoc = new DAL_HocVien_LopHoc();
             List<DTO_LopHoc> dsLop = new List<DTO_LopHoc>();
             try
             {
@@ -79,6 +38,7 @@ namespace DAL_QLPG
                         moTa = row["moTa"] == DBNull.Value ? null : row["moTa"].ToString(),
                         // idPhongTap = row["idPhongTap"] == DBNull.Value ? 0 : Convert.ToInt32(row["idPhongTap"])
                     };
+                    lop.soLuongConTrong = dalHV_LopHoc.soLuongConTrong(lop.idLopHoc);
                     dsLop.Add(lop);
                 }
             }
@@ -90,90 +50,7 @@ namespace DAL_QLPG
         }
 
 
-        // Lấy lớp học theo ID
-        //public DTO_LopHoc LayLopHocTheoID(int id)
-        //{
-        //    DTO_LopHoc lop = null;
-        //    try
-        //    {
-        //        conn.Open();
-        //        SqlCommand cmd = new SqlCommand("usp_LayLopHocTheoID", conn);
-        //        cmd.CommandType = CommandType.StoredProcedure;
-        //        cmd.Parameters.AddWithValue("@idLopHoc", id);
 
-        //        SqlDataReader dr = cmd.ExecuteReader();
-        //        if (dr.Read())
-        //        {
-        //            lop = new DTO_LopHoc
-        //            {
-        //                idLopHoc = Convert.ToInt32(dr["idLopHoc"]),
-        //                tenLopHoc = dr["tenLopHoc"].ToString(),
-        //                idTLLH = Convert.ToInt32(dr["idTLLH"]),
-        //                idHLV = Convert.ToInt32(dr["idHLV"]),
-        //                lichHoc = dr["lichHoc"].ToString(),
-        //                soLuongHV = Convert.ToInt32(dr["soLuongHV"]),
-        //                donGia = Convert.ToDecimal(dr["donGia"]),
-        //                ngayBatDau = Convert.ToDateTime(dr["ngayBatDau"]),
-        //                ngayKetThuc = Convert.ToDateTime(dr["ngayKetThuc"]),
-        //                moTa = dr["moTa"].ToString(),
-        //                idPhongTap = Convert.ToInt32(dr["idPhongTap"])
-        //            };
-        //        }
-        //        dr.Close();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    finally
-        //    {
-        //        conn.Close();
-        //    }
-        //    return lop;
-        //}
-
-        //// Lấy lớp học theo HLV
-        //public List<DTO_LopHoc> LayLopHocTheoHLV(int idHLV)
-        //{
-        //    List<DTO_LopHoc> dsLop = new List<DTO_LopHoc>();
-        //    try
-        //    {
-        //        conn.Open();
-        //        SqlCommand cmd = new SqlCommand("usp_LayLopHocTheoHLV", conn);
-        //        cmd.CommandType = CommandType.StoredProcedure;
-        //        cmd.Parameters.AddWithValue("@idHLV", idHLV);
-
-        //        SqlDataReader dr = cmd.ExecuteReader();
-        //        while (dr.Read())
-        //        {
-        //            DTO_LopHoc lop = new DTO_LopHoc
-        //            {
-        //                idLopHoc = Convert.ToInt32(dr["idLopHoc"]),
-        //                tenLopHoc = dr["tenLopHoc"].ToString(),
-        //                idTLLH = Convert.ToInt32(dr["idTLLH"]),
-        //                idHLV = Convert.ToInt32(dr["idHLV"]),
-        //                lichHoc = dr["lichHoc"].ToString(),
-        //                soLuongHV = Convert.ToInt32(dr["soLuongHV"]),
-        //                donGia = Convert.ToDecimal(dr["donGia"]),
-        //                ngayBatDau = Convert.ToDateTime(dr["ngayBatDau"]),
-        //                ngayKetThuc = Convert.ToDateTime(dr["ngayKetThuc"]),
-        //                moTa = dr["moTa"].ToString(),
-        //                idPhongTap = Convert.ToInt32(dr["idPhongTap"])
-        //            };
-        //            dsLop.Add(lop);
-        //        }
-        //        dr.Close();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    finally
-        //    {
-        //        conn.Close();
-        //    }
-        //    return dsLop;
-        //}
         public List<DTO_LopHoc> LayLopHocTheoHLV(int idHLV)
         {
             List<DTO_LopHoc> dsLop = new List<DTO_LopHoc>();
@@ -249,39 +126,6 @@ namespace DAL_QLPG
 
 
 
-        // Thêm lớp học
-        //public int ThemLopHoc(DTO_LopHoc lop)
-        //{
-        //    int kq = 0;
-        //    try
-        //    {
-        //        conn.Open();
-        //        SqlCommand cmd = new SqlCommand("usp_ThemLopHoc", conn);
-        //        cmd.CommandType = CommandType.StoredProcedure;
-
-        //        cmd.Parameters.AddWithValue("@tenLopHoc", lop.tenLopHoc);
-        //        cmd.Parameters.AddWithValue("@idTLLH", lop.idTLLH);
-        //        cmd.Parameters.AddWithValue("@idHLV", lop.idHLV);
-        //        cmd.Parameters.AddWithValue("@lichHoc", lop.lichHoc);
-        //        cmd.Parameters.AddWithValue("@soLuongHV", lop.soLuongHV);
-        //        cmd.Parameters.AddWithValue("@donGia", lop.donGia);
-        //        cmd.Parameters.AddWithValue("@ngayBatDau", lop.ngayBatDau);
-        //        cmd.Parameters.AddWithValue("@ngayKetThuc", lop.ngayKetThuc);
-        //        cmd.Parameters.AddWithValue("@moTa", lop.moTa);
-        //        //  cmd.Parameters.AddWithValue("@idPhongTap", lop.idPhongTap);
-
-        //        kq = cmd.ExecuteNonQuery();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    finally
-        //    {
-        //        conn.Close();
-        //    }
-        //    return kq;
-        //}
         public int ThemLopHoc(DTO_LopHoc lop)
         {
             try
@@ -308,40 +152,6 @@ namespace DAL_QLPG
         }
 
 
-        // Cập nhật lớp học
-        //public int CapNhatLopHoc(DTO_LopHoc lop)
-        //{
-        //    int kq = 0;
-        //    try
-        //    {
-        //        conn.Open();
-        //        SqlCommand cmd = new SqlCommand("usp_CapNhatLopHoc", conn);
-        //        cmd.CommandType = CommandType.StoredProcedure;
-
-        //        cmd.Parameters.AddWithValue("@idLopHoc", lop.idLopHoc);
-        //        cmd.Parameters.AddWithValue("@tenLopHoc", lop.tenLopHoc);
-        //        cmd.Parameters.AddWithValue("@idTLLH", lop.idTLLH);
-        //        cmd.Parameters.AddWithValue("@idHLV", lop.idHLV);
-        //        cmd.Parameters.AddWithValue("@lichHoc", lop.lichHoc);
-        //        cmd.Parameters.AddWithValue("@soLuongHV", lop.soLuongHV);
-        //        cmd.Parameters.AddWithValue("@donGia", lop.donGia);
-        //        cmd.Parameters.AddWithValue("@ngayBatDau", lop.ngayBatDau);
-        //        cmd.Parameters.AddWithValue("@ngayKetThuc", lop.ngayKetThuc);
-        //        cmd.Parameters.AddWithValue("@moTa", lop.moTa);
-        //        //cmd.Parameters.AddWithValue("@idPhongTap", lop.idPhongTap);
-
-        //        kq = cmd.ExecuteNonQuery();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    finally
-        //    {
-        //        conn.Close();
-        //    }
-        //    return kq;
-        //}
         public int CapNhatLopHoc(DTO_LopHoc lop)
         {
             try
@@ -369,29 +179,6 @@ namespace DAL_QLPG
         }
 
 
-        // Xóa lớp học
-        //public int XoaLopHoc(int idLopHoc)
-        //{
-        //    int kq = 0;
-        //    try
-        //    {
-        //        conn.Open();
-        //        SqlCommand cmd = new SqlCommand("usp_XoaLopHoc", conn);
-        //        cmd.CommandType = CommandType.StoredProcedure;
-        //        cmd.Parameters.AddWithValue("@idLopHoc", idLopHoc);
-
-        //        kq = cmd.ExecuteNonQuery();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    finally
-        //    {
-        //        conn.Close();
-        //    }
-        //    return kq;
-        //}
         public int XoaLopHoc(int idLopHoc)
         {
             try
@@ -400,6 +187,37 @@ namespace DAL_QLPG
             new SqlParameter("idLopHoc", idLopHoc)
         };
                 return ExecuteSQL("usp_XoaLopHoc", para);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public int ThemHocVienVaoLop(int idHocVien, int idLopHoc)
+        {
+            SqlParameter[] para =
+            {
+        new SqlParameter("@idHocVien", idHocVien),
+        new SqlParameter("@idLopHoc", idLopHoc),
+        new SqlParameter("@ResultCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
+    };
+
+            ExecuteSQL("usp_ThemHocVienVaoLop", para);
+            return (int)para[2].Value; // 0: OK, 1: Lớp đầy, 2: Đã tồn tại
+        }
+
+        public bool KiemTraSiSo(int idLop)
+        {
+            try
+            {
+                SqlParameter[] para = { new SqlParameter("@idLop", idLop) };
+                DataTable dt = GetDataTable("KiemTraSiSo", para); // Store này trả về 1 row chứa SoLuongConLai
+                if (dt.Rows.Count > 0)
+                {
+                    int soLuongConLai = Convert.ToInt32(dt.Rows[0]["SoLuongConLai"]);
+                    return soLuongConLai > 0;
+                }
+                return false;
             }
             catch (Exception ex)
             {

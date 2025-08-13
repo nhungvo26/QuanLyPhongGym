@@ -37,5 +37,14 @@ namespace BUS_QLPG
         {
             return dalHocVien.timKiemHocVien(tuKhoa);
         }
+        public DataTable layHocVienChuaCoLop()
+        {
+            return dalHocVien.layHocVienChuaCoLop();
+        }
+        public DataTable LayHocVienTheoLop(int idLopHoc)
+        {
+            return dalHocVien.LayHocVienTheoLop(idLopHoc);
+        }
     }
 }
+
