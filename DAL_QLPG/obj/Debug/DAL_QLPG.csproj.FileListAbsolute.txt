@@ -16,3 +16,12 @@ D:\BTL_LTCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.csproj.CoreCompileInput
 D:\BTL_LTCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.csproj.Up2Date
 D:\BTL_LTCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.dll
 D:\BTL_LTCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.pdb
+D:\BT_LTCSDL\QuanLyPhongGym\DAL_QLPG\bin\Debug\DAL_QLPG.dll
+D:\BT_LTCSDL\QuanLyPhongGym\DAL_QLPG\bin\Debug\DAL_QLPG.pdb
+D:\BT_LTCSDL\QuanLyPhongGym\DAL_QLPG\bin\Debug\DTO_QLPG.dll
+D:\BT_LTCSDL\QuanLyPhongGym\DAL_QLPG\bin\Debug\DTO_QLPG.pdb
+D:\BT_LTCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.csproj.AssemblyReference.cache
+D:\BT_LTCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.csproj.CoreCompileInputs.cache
+D:\BT_LTCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.csproj.Up2Date
+D:\BT_LTCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.dll
+D:\BT_LTCSDL\QuanLyPhongGym\DAL_QLPG\obj\Debug\DAL_QLPG.pdb
