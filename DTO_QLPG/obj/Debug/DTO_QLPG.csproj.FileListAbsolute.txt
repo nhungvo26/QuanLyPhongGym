@@ -10,3 +10,9 @@ D:\BTL_LTCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.csproj.AssemblyReferenc
 D:\BTL_LTCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.csproj.CoreCompileInputs.cache
 D:\BTL_LTCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.dll
 D:\BTL_LTCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.pdb
+D:\BT_LTCSDL\QuanLyPhongGym\DTO_QLPG\bin\Debug\DTO_QLPG.dll
+D:\BT_LTCSDL\QuanLyPhongGym\DTO_QLPG\bin\Debug\DTO_QLPG.pdb
+D:\BT_LTCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.csproj.AssemblyReference.cache
+D:\BT_LTCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.csproj.CoreCompileInputs.cache
+D:\BT_LTCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.dll
+D:\BT_LTCSDL\QuanLyPhongGym\DTO_QLPG\obj\Debug\DTO_QLPG.pdb
