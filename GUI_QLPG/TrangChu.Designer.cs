@@ -227,6 +227,7 @@ namespace GUI_QLPG
             this.btnTrangChu.TabIndex = 7;
             this.btnTrangChu.Text = "Trang chủ";
             this.btnTrangChu.UseVisualStyleBackColor = false;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
             // label2
             // 
@@ -266,16 +267,18 @@ namespace GUI_QLPG
             this.pnMain.AutoSize = true;
             this.pnMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnMain.Location = new System.Drawing.Point(200, 30);
-            this.pnMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnMain.Margin = new System.Windows.Forms.Padding(2);
             this.pnMain.Name = "pnMain";
             this.pnMain.Size = new System.Drawing.Size(0, 0);
             this.pnMain.TabIndex = 2;
             // 
             // pnMain1
             // 
+            this.pnMain1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnMain1.BackgroundImage")));
+            this.pnMain1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnMain1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMain1.Location = new System.Drawing.Point(200, 30);
-            this.pnMain1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnMain1.Margin = new System.Windows.Forms.Padding(2);
             this.pnMain1.Name = "pnMain1";
             this.pnMain1.Size = new System.Drawing.Size(984, 681);
             this.pnMain1.TabIndex = 3;

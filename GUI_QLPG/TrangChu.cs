@@ -31,6 +31,7 @@ namespace GUI_QLPG
                 btnLopHoc.Enabled = false;
                 btnThanhToan.Enabled = false;
                 btnThietBi.Enabled = false;
+                btnThongBao.Enabled = false;
             }
             else if (vaiTro == "Lễ tân")
             {
@@ -46,7 +47,6 @@ namespace GUI_QLPG
                 btnLopHoc.Enabled = false;
                 btnThanhToan.Enabled = false;
                 btnThongKe.Enabled = false;
-                btnThongBao.Enabled = false;
             }
             else if (vaiTro == "Huấn luyện viên")
             {
@@ -69,13 +69,12 @@ namespace GUI_QLPG
                 this.Close();
             }
         }
+
         private void OpenForm(Form form)
         {
             pnMain1.Controls.Clear(); //xóa form con cũ nếu có
             pnMain1.Width = form.Width;
-            pnMain1.Height = form.Height;
-
-           
+            pnMain1.Height = form.Height;           
             //cấu hình form con
             form.TopLevel = false;
             form.FormBorderStyle = FormBorderStyle.None;
@@ -91,20 +90,17 @@ namespace GUI_QLPG
         {
             Form lophoc = new LopHoc();
             OpenForm(lophoc);
-
         }
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
             Form nhanvien = new NhanVien();
             OpenForm(nhanvien);
-
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
             Form thongke = new ThongKe();
             OpenForm(thongke);
-
         }
 
         private void btnHocVien_Click(object sender, EventArgs e)
@@ -115,6 +111,17 @@ namespace GUI_QLPG
         private void btnThietBi_Click(object sender, EventArgs e)
         {
             OpenForm(new GUI_ThietBi());
+        }
+
+        /*private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbTieuDe.Text = lbTieuDe.Text.Substring(1) + lbTieuDe.Text[0]; //Phải sang trái
+            //lbTieuDe.Text = lbTieuDe.Text.Substring(lbTieuDe.Text.Length - 1) + lbTieuDe.Text.Substring(0, lbTieuDe.Text.Length - 1); //Trái sang phải
+        }*/
+
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+            pnMain1.Controls.Clear();
         }
     }
 }
