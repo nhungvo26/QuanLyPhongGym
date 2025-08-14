@@ -123,5 +123,10 @@ namespace GUI_QLPG
         {
             pnMain1.Controls.Clear();
         }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            OpenForm(new GUI_ThanhToan());
+        }
     }
 }

@@ -30,6 +30,8 @@ namespace GUI_QLPG
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
+            this.pnMain = new System.Windows.Forms.Panel();
+            this.pnMain1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnThongBao = new System.Windows.Forms.Button();
@@ -43,11 +45,30 @@ namespace GUI_QLPG
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnMain = new System.Windows.Forms.Panel();
-            this.pnMain1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pnMain
+            // 
+            this.pnMain.AutoSize = true;
+            this.pnMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnMain.Location = new System.Drawing.Point(200, 30);
+            this.pnMain.Margin = new System.Windows.Forms.Padding(2);
+            this.pnMain.Name = "pnMain";
+            this.pnMain.Size = new System.Drawing.Size(0, 0);
+            this.pnMain.TabIndex = 2;
+            // 
+            // pnMain1
+            // 
+            this.pnMain1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnMain1.BackgroundImage")));
+            this.pnMain1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnMain1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnMain1.Location = new System.Drawing.Point(200, 30);
+            this.pnMain1.Margin = new System.Windows.Forms.Padding(2);
+            this.pnMain1.Name = "pnMain1";
+            this.pnMain1.Size = new System.Drawing.Size(984, 681);
+            this.pnMain1.TabIndex = 3;
             // 
             // panel2
             // 
@@ -174,6 +195,7 @@ namespace GUI_QLPG
             this.btnThanhToan.TabIndex = 8;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.UseVisualStyleBackColor = false;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // btnHocVien
             // 
@@ -261,27 +283,6 @@ namespace GUI_QLPG
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1184, 30);
             this.panel1.TabIndex = 0;
-            // 
-            // pnMain
-            // 
-            this.pnMain.AutoSize = true;
-            this.pnMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.pnMain.Location = new System.Drawing.Point(200, 30);
-            this.pnMain.Margin = new System.Windows.Forms.Padding(2);
-            this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(0, 0);
-            this.pnMain.TabIndex = 2;
-            // 
-            // pnMain1
-            // 
-            this.pnMain1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnMain1.BackgroundImage")));
-            this.pnMain1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnMain1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnMain1.Location = new System.Drawing.Point(200, 30);
-            this.pnMain1.Margin = new System.Windows.Forms.Padding(2);
-            this.pnMain1.Name = "pnMain1";
-            this.pnMain1.Size = new System.Drawing.Size(984, 681);
-            this.pnMain1.TabIndex = 3;
             // 
             // TrangChu
             // 

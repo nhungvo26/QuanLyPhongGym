@@ -118,8 +118,9 @@ namespace GUI_QLPG
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.Yellow;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1496, 79);
+            this.panel1.Size = new System.Drawing.Size(1028, 65);
             this.panel1.TabIndex = 2;
             // 
             // groupBox1
@@ -133,17 +134,20 @@ namespace GUI_QLPG
             this.groupBox1.Controls.Add(this.rdThoiGian);
             this.groupBox1.Controls.Add(this.rdLoaiHinh);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(630, -11);
+            this.groupBox1.Location = new System.Drawing.Point(378, -9);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(864, 95);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(648, 77);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(376, 34);
+            this.txtTimKiem.Location = new System.Drawing.Point(282, 28);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(417, 30);
+            this.txtTimKiem.Size = new System.Drawing.Size(314, 26);
             this.txtTimKiem.TabIndex = 3;
             // 
             // btTimKiem
@@ -151,9 +155,10 @@ namespace GUI_QLPG
             this.btTimKiem.BackColor = System.Drawing.SystemColors.Control;
             this.btTimKiem.BackgroundImage = global::GUI_QLPG.Properties.Resources.timkiem;
             this.btTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btTimKiem.Location = new System.Drawing.Point(793, 27);
+            this.btTimKiem.Location = new System.Drawing.Point(595, 22);
+            this.btTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btTimKiem.Name = "btTimKiem";
-            this.btTimKiem.Size = new System.Drawing.Size(48, 44);
+            this.btTimKiem.Size = new System.Drawing.Size(36, 36);
             this.btTimKiem.TabIndex = 2;
             this.btTimKiem.UseVisualStyleBackColor = false;
             this.btTimKiem.Click += new System.EventHandler(this.btTimKiem_Click);
@@ -163,9 +168,10 @@ namespace GUI_QLPG
             this.rdHLV.AutoSize = true;
             this.rdHLV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdHLV.ForeColor = System.Drawing.Color.Black;
-            this.rdHLV.Location = new System.Drawing.Point(0, 55);
+            this.rdHLV.Location = new System.Drawing.Point(0, 45);
+            this.rdHLV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdHLV.Name = "rdHLV";
-            this.rdHLV.Size = new System.Drawing.Size(188, 29);
+            this.rdHLV.Size = new System.Drawing.Size(154, 24);
             this.rdHLV.TabIndex = 0;
             this.rdHLV.TabStop = true;
             this.rdHLV.Text = "Huấn luyện viên";
@@ -176,9 +182,10 @@ namespace GUI_QLPG
             this.rdGia.AutoSize = true;
             this.rdGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdGia.ForeColor = System.Drawing.Color.Black;
-            this.rdGia.Location = new System.Drawing.Point(226, 55);
+            this.rdGia.Location = new System.Drawing.Point(170, 45);
+            this.rdGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdGia.Name = "rdGia";
-            this.rdGia.Size = new System.Drawing.Size(66, 29);
+            this.rdGia.Size = new System.Drawing.Size(55, 24);
             this.rdGia.TabIndex = 0;
             this.rdGia.TabStop = true;
             this.rdGia.Text = "Giá";
@@ -189,9 +196,10 @@ namespace GUI_QLPG
             this.rdThoiGian.AutoSize = true;
             this.rdThoiGian.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdThoiGian.ForeColor = System.Drawing.Color.Black;
-            this.rdThoiGian.Location = new System.Drawing.Point(226, 20);
+            this.rdThoiGian.Location = new System.Drawing.Point(170, 16);
+            this.rdThoiGian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdThoiGian.Name = "rdThoiGian";
-            this.rdThoiGian.Size = new System.Drawing.Size(123, 29);
+            this.rdThoiGian.Size = new System.Drawing.Size(100, 24);
             this.rdThoiGian.TabIndex = 0;
             this.rdThoiGian.TabStop = true;
             this.rdThoiGian.Text = "Thời gian";
@@ -202,9 +210,10 @@ namespace GUI_QLPG
             this.rdLoaiHinh.AutoSize = true;
             this.rdLoaiHinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdLoaiHinh.ForeColor = System.Drawing.Color.Black;
-            this.rdLoaiHinh.Location = new System.Drawing.Point(0, 20);
+            this.rdLoaiHinh.Location = new System.Drawing.Point(0, 16);
+            this.rdLoaiHinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdLoaiHinh.Name = "rdLoaiHinh";
-            this.rdLoaiHinh.Size = new System.Drawing.Size(121, 29);
+            this.rdLoaiHinh.Size = new System.Drawing.Size(100, 24);
             this.rdLoaiHinh.TabIndex = 0;
             this.rdLoaiHinh.TabStop = true;
             this.rdLoaiHinh.Text = "Loại hình";
@@ -215,9 +224,10 @@ namespace GUI_QLPG
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(37, 12);
+            this.label1.Location = new System.Drawing.Point(28, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 55);
+            this.label1.Size = new System.Drawing.Size(151, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lớp học";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -232,9 +242,10 @@ namespace GUI_QLPG
             this.panel2.Controls.Add(this.btnHLV);
             this.panel2.Controls.Add(this.btnDanhSachLop);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 79);
+            this.panel2.Location = new System.Drawing.Point(0, 65);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1496, 100);
+            this.panel2.Size = new System.Drawing.Size(1028, 82);
             this.panel2.TabIndex = 3;
             // 
             // btnLopCuaBan
@@ -243,9 +254,10 @@ namespace GUI_QLPG
             this.btnLopCuaBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLopCuaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLopCuaBan.ForeColor = System.Drawing.Color.Black;
-            this.btnLopCuaBan.Location = new System.Drawing.Point(33, 27);
+            this.btnLopCuaBan.Location = new System.Drawing.Point(25, 22);
+            this.btnLopCuaBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLopCuaBan.Name = "btnLopCuaBan";
-            this.btnLopCuaBan.Size = new System.Drawing.Size(227, 42);
+            this.btnLopCuaBan.Size = new System.Drawing.Size(170, 34);
             this.btnLopCuaBan.TabIndex = 0;
             this.btnLopCuaBan.Text = "Lớp của bạn";
             this.btnLopCuaBan.UseVisualStyleBackColor = false;
@@ -257,9 +269,10 @@ namespace GUI_QLPG
             this.btnCapNhatLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCapNhatLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapNhatLop.ForeColor = System.Drawing.Color.Black;
-            this.btnCapNhatLop.Location = new System.Drawing.Point(1188, 27);
+            this.btnCapNhatLop.Location = new System.Drawing.Point(891, 22);
+            this.btnCapNhatLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCapNhatLop.Name = "btnCapNhatLop";
-            this.btnCapNhatLop.Size = new System.Drawing.Size(227, 42);
+            this.btnCapNhatLop.Size = new System.Drawing.Size(170, 34);
             this.btnCapNhatLop.TabIndex = 0;
             this.btnCapNhatLop.Text = "Cập nhật lớp học";
             this.btnCapNhatLop.UseVisualStyleBackColor = false;
@@ -271,9 +284,10 @@ namespace GUI_QLPG
             this.btnDSHV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDSHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDSHV.ForeColor = System.Drawing.Color.Black;
-            this.btnDSHV.Location = new System.Drawing.Point(989, -77);
+            this.btnDSHV.Location = new System.Drawing.Point(742, -63);
+            this.btnDSHV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDSHV.Name = "btnDSHV";
-            this.btnDSHV.Size = new System.Drawing.Size(247, 42);
+            this.btnDSHV.Size = new System.Drawing.Size(185, 34);
             this.btnDSHV.TabIndex = 0;
             this.btnDSHV.Text = "Danh sách học viên";
             this.btnDSHV.UseVisualStyleBackColor = false;
@@ -284,9 +298,10 @@ namespace GUI_QLPG
             this.btnDanhSachHV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDanhSachHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDanhSachHV.ForeColor = System.Drawing.Color.Black;
-            this.btnDanhSachHV.Location = new System.Drawing.Point(893, 27);
+            this.btnDanhSachHV.Location = new System.Drawing.Point(670, 22);
+            this.btnDanhSachHV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDanhSachHV.Name = "btnDanhSachHV";
-            this.btnDanhSachHV.Size = new System.Drawing.Size(241, 42);
+            this.btnDanhSachHV.Size = new System.Drawing.Size(181, 34);
             this.btnDanhSachHV.TabIndex = 0;
             this.btnDanhSachHV.Text = "Danh sách học viên";
             this.btnDanhSachHV.UseVisualStyleBackColor = false;
@@ -298,9 +313,10 @@ namespace GUI_QLPG
             this.btnHLV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHLV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHLV.ForeColor = System.Drawing.Color.Black;
-            this.btnHLV.Location = new System.Drawing.Point(599, 27);
+            this.btnHLV.Location = new System.Drawing.Point(449, 22);
+            this.btnHLV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHLV.Name = "btnHLV";
-            this.btnHLV.Size = new System.Drawing.Size(227, 42);
+            this.btnHLV.Size = new System.Drawing.Size(170, 34);
             this.btnHLV.TabIndex = 0;
             this.btnHLV.Text = "Huấn luyện viên";
             this.btnHLV.UseVisualStyleBackColor = false;
@@ -312,9 +328,10 @@ namespace GUI_QLPG
             this.btnDanhSachLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDanhSachLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDanhSachLop.ForeColor = System.Drawing.Color.Black;
-            this.btnDanhSachLop.Location = new System.Drawing.Point(315, 27);
+            this.btnDanhSachLop.Location = new System.Drawing.Point(236, 22);
+            this.btnDanhSachLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDanhSachLop.Name = "btnDanhSachLop";
-            this.btnDanhSachLop.Size = new System.Drawing.Size(227, 42);
+            this.btnDanhSachLop.Size = new System.Drawing.Size(170, 34);
             this.btnDanhSachLop.TabIndex = 0;
             this.btnDanhSachLop.Text = "Danh sách lớp học";
             this.btnDanhSachLop.UseVisualStyleBackColor = false;
@@ -329,9 +346,10 @@ namespace GUI_QLPG
             this.panel9.Controls.Add(this.btnSuaLop);
             this.panel9.Controls.Add(this.btnThemLop);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 179);
+            this.panel9.Location = new System.Drawing.Point(0, 147);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1496, 91);
+            this.panel9.Size = new System.Drawing.Size(1028, 74);
             this.panel9.TabIndex = 4;
             // 
             // btnHuy
@@ -340,9 +358,10 @@ namespace GUI_QLPG
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.ForeColor = System.Drawing.Color.Black;
-            this.btnHuy.Location = new System.Drawing.Point(1253, 21);
+            this.btnHuy.Location = new System.Drawing.Point(940, 17);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(227, 42);
+            this.btnHuy.Size = new System.Drawing.Size(170, 34);
             this.btnHuy.TabIndex = 0;
             this.btnHuy.Text = "Xoá HV khỏi lớp";
             this.btnHuy.UseVisualStyleBackColor = false;
@@ -353,9 +372,10 @@ namespace GUI_QLPG
             this.btnThemHV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemHV.ForeColor = System.Drawing.Color.Black;
-            this.btnThemHV.Location = new System.Drawing.Point(1010, 21);
+            this.btnThemHV.Location = new System.Drawing.Point(758, 17);
+            this.btnThemHV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThemHV.Name = "btnThemHV";
-            this.btnThemHV.Size = new System.Drawing.Size(227, 42);
+            this.btnThemHV.Size = new System.Drawing.Size(170, 34);
             this.btnThemHV.TabIndex = 0;
             this.btnThemHV.Text = "Thêm HV vào lớp";
             this.btnThemHV.UseVisualStyleBackColor = false;
@@ -367,9 +387,10 @@ namespace GUI_QLPG
             this.btnXoaSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaSach.ForeColor = System.Drawing.Color.Black;
-            this.btnXoaSach.Location = new System.Drawing.Point(763, 21);
+            this.btnXoaSach.Location = new System.Drawing.Point(572, 17);
+            this.btnXoaSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXoaSach.Name = "btnXoaSach";
-            this.btnXoaSach.Size = new System.Drawing.Size(227, 42);
+            this.btnXoaSach.Size = new System.Drawing.Size(170, 34);
             this.btnXoaSach.TabIndex = 0;
             this.btnXoaSach.Text = "Clear";
             this.btnXoaSach.UseVisualStyleBackColor = false;
@@ -381,9 +402,10 @@ namespace GUI_QLPG
             this.btnXoaLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoaLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaLop.ForeColor = System.Drawing.Color.Black;
-            this.btnXoaLop.Location = new System.Drawing.Point(516, 21);
+            this.btnXoaLop.Location = new System.Drawing.Point(387, 17);
+            this.btnXoaLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXoaLop.Name = "btnXoaLop";
-            this.btnXoaLop.Size = new System.Drawing.Size(227, 42);
+            this.btnXoaLop.Size = new System.Drawing.Size(170, 34);
             this.btnXoaLop.TabIndex = 0;
             this.btnXoaLop.Text = "Xoá lớp học";
             this.btnXoaLop.UseVisualStyleBackColor = false;
@@ -395,9 +417,10 @@ namespace GUI_QLPG
             this.btnSuaLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuaLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuaLop.ForeColor = System.Drawing.Color.Black;
-            this.btnSuaLop.Location = new System.Drawing.Point(272, 21);
+            this.btnSuaLop.Location = new System.Drawing.Point(204, 17);
+            this.btnSuaLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSuaLop.Name = "btnSuaLop";
-            this.btnSuaLop.Size = new System.Drawing.Size(227, 42);
+            this.btnSuaLop.Size = new System.Drawing.Size(170, 34);
             this.btnSuaLop.TabIndex = 0;
             this.btnSuaLop.Text = "Cập nhật lớp học";
             this.btnSuaLop.UseVisualStyleBackColor = false;
@@ -409,9 +432,10 @@ namespace GUI_QLPG
             this.btnThemLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemLop.ForeColor = System.Drawing.Color.Black;
-            this.btnThemLop.Location = new System.Drawing.Point(23, 21);
+            this.btnThemLop.Location = new System.Drawing.Point(17, 17);
+            this.btnThemLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThemLop.Name = "btnThemLop";
-            this.btnThemLop.Size = new System.Drawing.Size(227, 42);
+            this.btnThemLop.Size = new System.Drawing.Size(170, 34);
             this.btnThemLop.TabIndex = 0;
             this.btnThemLop.Text = "Thêm lớp học";
             this.btnThemLop.UseVisualStyleBackColor = false;
@@ -422,9 +446,10 @@ namespace GUI_QLPG
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.dgvClass);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 270);
+            this.panel3.Location = new System.Drawing.Point(0, 221);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1496, 404);
+            this.panel3.Size = new System.Drawing.Size(1028, 327);
             this.panel3.TabIndex = 6;
             // 
             // panel4
@@ -433,8 +458,9 @@ namespace GUI_QLPG
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1496, 404);
+            this.panel4.Size = new System.Drawing.Size(1028, 327);
             this.panel4.TabIndex = 2;
             // 
             // panel6
@@ -442,9 +468,10 @@ namespace GUI_QLPG
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.dgvCapNhat);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 291);
+            this.panel6.Location = new System.Drawing.Point(0, 237);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1496, 113);
+            this.panel6.Size = new System.Drawing.Size(1028, 90);
             this.panel6.TabIndex = 38;
             // 
             // panel7
@@ -452,8 +479,9 @@ namespace GUI_QLPG
             this.panel7.Controls.Add(this.dgvHLV);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1496, 113);
+            this.panel7.Size = new System.Drawing.Size(1028, 90);
             this.panel7.TabIndex = 2;
             // 
             // dgvHLV
@@ -461,10 +489,11 @@ namespace GUI_QLPG
             this.dgvHLV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHLV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvHLV.Location = new System.Drawing.Point(0, 0);
+            this.dgvHLV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvHLV.Name = "dgvHLV";
             this.dgvHLV.RowHeadersWidth = 51;
             this.dgvHLV.RowTemplate.Height = 24;
-            this.dgvHLV.Size = new System.Drawing.Size(1496, 113);
+            this.dgvHLV.Size = new System.Drawing.Size(1028, 90);
             this.dgvHLV.TabIndex = 1;
             this.dgvHLV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHLV_CellClick);
             // 
@@ -473,11 +502,12 @@ namespace GUI_QLPG
             this.dgvCapNhat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCapNhat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCapNhat.Location = new System.Drawing.Point(0, 0);
+            this.dgvCapNhat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvCapNhat.Name = "dgvCapNhat";
             this.dgvCapNhat.RowHeadersWidth = 51;
             this.dgvCapNhat.RowTemplate.Height = 24;
             this.dgvCapNhat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCapNhat.Size = new System.Drawing.Size(1496, 113);
+            this.dgvCapNhat.Size = new System.Drawing.Size(1028, 90);
             this.dgvCapNhat.TabIndex = 1;
             this.dgvCapNhat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCapNhat_CellClick);
             // 
@@ -512,8 +542,9 @@ namespace GUI_QLPG
             this.panel5.Controls.Add(this.label22);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1496, 291);
+            this.panel5.Size = new System.Drawing.Size(1028, 237);
             this.panel5.TabIndex = 37;
             // 
             // cbGioKT
@@ -521,9 +552,10 @@ namespace GUI_QLPG
             this.cbGioKT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGioKT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGioKT.FormattingEnabled = true;
-            this.cbGioKT.Location = new System.Drawing.Point(489, 217);
+            this.cbGioKT.Location = new System.Drawing.Point(367, 176);
+            this.cbGioKT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbGioKT.Name = "cbGioKT";
-            this.cbGioKT.Size = new System.Drawing.Size(179, 33);
+            this.cbGioKT.Size = new System.Drawing.Size(135, 28);
             this.cbGioKT.TabIndex = 37;
             // 
             // cbGioBD
@@ -531,9 +563,10 @@ namespace GUI_QLPG
             this.cbGioBD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGioBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGioBD.FormattingEnabled = true;
-            this.cbGioBD.Location = new System.Drawing.Point(489, 153);
+            this.cbGioBD.Location = new System.Drawing.Point(367, 124);
+            this.cbGioBD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbGioBD.Name = "cbGioBD";
-            this.cbGioBD.Size = new System.Drawing.Size(179, 33);
+            this.cbGioBD.Size = new System.Drawing.Size(135, 28);
             this.cbGioBD.TabIndex = 36;
             // 
             // label2
@@ -542,9 +575,10 @@ namespace GUI_QLPG
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(541, 189);
+            this.label2.Location = new System.Drawing.Point(406, 154);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 25);
+            this.label2.Size = new System.Drawing.Size(107, 20);
             this.label2.TabIndex = 35;
             this.label2.Text = "Giờ kết thúc";
             // 
@@ -554,9 +588,10 @@ namespace GUI_QLPG
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(545, 122);
+            this.label13.Location = new System.Drawing.Point(409, 99);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(123, 25);
+            this.label13.Size = new System.Drawing.Size(103, 20);
             this.label13.TabIndex = 34;
             this.label13.Text = "Giờ bắt đầu";
             // 
@@ -571,9 +606,11 @@ namespace GUI_QLPG
             this.groupBox2.Controls.Add(this.chkT3);
             this.groupBox2.Controls.Add(this.chkT2);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.Location = new System.Drawing.Point(236, 129);
+            this.groupBox2.Location = new System.Drawing.Point(177, 105);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(230, 155);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(172, 126);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             // 
@@ -582,9 +619,10 @@ namespace GUI_QLPG
             this.chkT6.AutoSize = true;
             this.chkT6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkT6.ForeColor = System.Drawing.Color.Black;
-            this.chkT6.Location = new System.Drawing.Point(109, 7);
+            this.chkT6.Location = new System.Drawing.Point(82, 6);
+            this.chkT6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkT6.Name = "chkT6";
-            this.chkT6.Size = new System.Drawing.Size(85, 29);
+            this.chkT6.Size = new System.Drawing.Size(68, 24);
             this.chkT6.TabIndex = 1;
             this.chkT6.Text = "Thứ 6";
             this.chkT6.UseVisualStyleBackColor = true;
@@ -594,9 +632,10 @@ namespace GUI_QLPG
             this.chkT7.AutoSize = true;
             this.chkT7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkT7.ForeColor = System.Drawing.Color.Black;
-            this.chkT7.Location = new System.Drawing.Point(109, 44);
+            this.chkT7.Location = new System.Drawing.Point(82, 36);
+            this.chkT7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkT7.Name = "chkT7";
-            this.chkT7.Size = new System.Drawing.Size(85, 29);
+            this.chkT7.Size = new System.Drawing.Size(68, 24);
             this.chkT7.TabIndex = 1;
             this.chkT7.Text = "Thứ 7";
             this.chkT7.UseVisualStyleBackColor = true;
@@ -606,9 +645,10 @@ namespace GUI_QLPG
             this.chkCN.AutoSize = true;
             this.chkCN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkCN.ForeColor = System.Drawing.Color.Black;
-            this.chkCN.Location = new System.Drawing.Point(109, 81);
+            this.chkCN.Location = new System.Drawing.Point(82, 66);
+            this.chkCN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkCN.Name = "chkCN";
-            this.chkCN.Size = new System.Drawing.Size(114, 29);
+            this.chkCN.Size = new System.Drawing.Size(93, 24);
             this.chkCN.TabIndex = 1;
             this.chkCN.Text = "Chủ nhật";
             this.chkCN.UseVisualStyleBackColor = true;
@@ -618,9 +658,10 @@ namespace GUI_QLPG
             this.chkT5.AutoSize = true;
             this.chkT5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkT5.ForeColor = System.Drawing.Color.Black;
-            this.chkT5.Location = new System.Drawing.Point(6, 118);
+            this.chkT5.Location = new System.Drawing.Point(4, 96);
+            this.chkT5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkT5.Name = "chkT5";
-            this.chkT5.Size = new System.Drawing.Size(85, 29);
+            this.chkT5.Size = new System.Drawing.Size(68, 24);
             this.chkT5.TabIndex = 1;
             this.chkT5.Text = "Thứ 5";
             this.chkT5.UseVisualStyleBackColor = true;
@@ -630,9 +671,10 @@ namespace GUI_QLPG
             this.chkT4.AutoSize = true;
             this.chkT4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkT4.ForeColor = System.Drawing.Color.Black;
-            this.chkT4.Location = new System.Drawing.Point(6, 81);
+            this.chkT4.Location = new System.Drawing.Point(4, 66);
+            this.chkT4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkT4.Name = "chkT4";
-            this.chkT4.Size = new System.Drawing.Size(85, 29);
+            this.chkT4.Size = new System.Drawing.Size(68, 24);
             this.chkT4.TabIndex = 1;
             this.chkT4.Text = "Thứ 4";
             this.chkT4.UseVisualStyleBackColor = true;
@@ -642,9 +684,10 @@ namespace GUI_QLPG
             this.chkT3.AutoSize = true;
             this.chkT3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkT3.ForeColor = System.Drawing.Color.Black;
-            this.chkT3.Location = new System.Drawing.Point(6, 44);
+            this.chkT3.Location = new System.Drawing.Point(4, 36);
+            this.chkT3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkT3.Name = "chkT3";
-            this.chkT3.Size = new System.Drawing.Size(85, 29);
+            this.chkT3.Size = new System.Drawing.Size(68, 24);
             this.chkT3.TabIndex = 1;
             this.chkT3.Text = "Thứ 3";
             this.chkT3.UseVisualStyleBackColor = true;
@@ -654,9 +697,10 @@ namespace GUI_QLPG
             this.chkT2.AutoSize = true;
             this.chkT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkT2.ForeColor = System.Drawing.Color.Black;
-            this.chkT2.Location = new System.Drawing.Point(6, 7);
+            this.chkT2.Location = new System.Drawing.Point(4, 6);
+            this.chkT2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkT2.Name = "chkT2";
-            this.chkT2.Size = new System.Drawing.Size(85, 29);
+            this.chkT2.Size = new System.Drawing.Size(68, 24);
             this.chkT2.TabIndex = 1;
             this.chkT2.Text = "Thứ 2";
             this.chkT2.UseVisualStyleBackColor = true;
@@ -667,9 +711,10 @@ namespace GUI_QLPG
             this.btnThemLich.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemLich.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemLich.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnThemLich.Location = new System.Drawing.Point(520, 248);
+            this.btnThemLich.Location = new System.Drawing.Point(390, 202);
+            this.btnThemLich.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThemLich.Name = "btnThemLich";
-            this.btnThemLich.Size = new System.Drawing.Size(148, 35);
+            this.btnThemLich.Size = new System.Drawing.Size(111, 28);
             this.btnThemLich.TabIndex = 30;
             this.btnThemLich.Text = "Thêm lịch";
             this.btnThemLich.UseVisualStyleBackColor = false;
@@ -682,9 +727,10 @@ namespace GUI_QLPG
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Tomato;
-            this.btnClear.Location = new System.Drawing.Point(1042, 242);
+            this.btnClear.Location = new System.Drawing.Point(688, 197);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(138, 43);
+            this.btnClear.Size = new System.Drawing.Size(104, 35);
             this.btnClear.TabIndex = 29;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -697,9 +743,10 @@ namespace GUI_QLPG
             this.btnPhanCongHLV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPhanCongHLV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhanCongHLV.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnPhanCongHLV.Location = new System.Drawing.Point(1256, 242);
+            this.btnPhanCongHLV.Location = new System.Drawing.Point(848, 197);
+            this.btnPhanCongHLV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPhanCongHLV.Name = "btnPhanCongHLV";
-            this.btnPhanCongHLV.Size = new System.Drawing.Size(191, 43);
+            this.btnPhanCongHLV.Size = new System.Drawing.Size(143, 35);
             this.btnPhanCongHLV.TabIndex = 28;
             this.btnPhanCongHLV.Text = "Phân công HLV";
             this.btnPhanCongHLV.UseVisualStyleBackColor = false;
@@ -709,18 +756,20 @@ namespace GUI_QLPG
             // 
             this.dtEndDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtEndDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtEndDate.Location = new System.Drawing.Point(1042, 167);
+            this.dtEndDate.Location = new System.Drawing.Point(688, 136);
+            this.dtEndDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtEndDate.Name = "dtEndDate";
-            this.dtEndDate.Size = new System.Drawing.Size(405, 30);
+            this.dtEndDate.Size = new System.Drawing.Size(305, 26);
             this.dtEndDate.TabIndex = 27;
             // 
             // dtStartDate
             // 
             this.dtStartDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtStartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtStartDate.Location = new System.Drawing.Point(1042, 127);
+            this.dtStartDate.Location = new System.Drawing.Point(688, 103);
+            this.dtStartDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtStartDate.Name = "dtStartDate";
-            this.dtStartDate.Size = new System.Drawing.Size(405, 30);
+            this.dtStartDate.Size = new System.Drawing.Size(305, 26);
             this.dtStartDate.TabIndex = 26;
             // 
             // cbLoaihinh
@@ -728,44 +777,49 @@ namespace GUI_QLPG
             this.cbLoaihinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLoaihinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbLoaihinh.FormattingEnabled = true;
-            this.cbLoaihinh.Location = new System.Drawing.Point(236, 46);
+            this.cbLoaihinh.Location = new System.Drawing.Point(177, 37);
+            this.cbLoaihinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbLoaihinh.Name = "cbLoaihinh";
-            this.cbLoaihinh.Size = new System.Drawing.Size(432, 33);
+            this.cbLoaihinh.Size = new System.Drawing.Size(325, 28);
             this.cbLoaihinh.TabIndex = 25;
             // 
             // txtSoLuongHV
             // 
             this.txtSoLuongHV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSoLuongHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuongHV.Location = new System.Drawing.Point(1042, 5);
+            this.txtSoLuongHV.Location = new System.Drawing.Point(688, 4);
+            this.txtSoLuongHV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSoLuongHV.Name = "txtSoLuongHV";
-            this.txtSoLuongHV.Size = new System.Drawing.Size(405, 30);
+            this.txtSoLuongHV.Size = new System.Drawing.Size(305, 26);
             this.txtSoLuongHV.TabIndex = 24;
             // 
             // txtMoTa
             // 
             this.txtMoTa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMoTa.Location = new System.Drawing.Point(1042, 87);
+            this.txtMoTa.Location = new System.Drawing.Point(688, 71);
+            this.txtMoTa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMoTa.Name = "txtMoTa";
-            this.txtMoTa.Size = new System.Drawing.Size(405, 30);
+            this.txtMoTa.Size = new System.Drawing.Size(305, 26);
             this.txtMoTa.TabIndex = 23;
             // 
             // txtSchedule
             // 
             this.txtSchedule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSchedule.Location = new System.Drawing.Point(235, 89);
+            this.txtSchedule.Location = new System.Drawing.Point(176, 72);
+            this.txtSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSchedule.Name = "txtSchedule";
-            this.txtSchedule.Size = new System.Drawing.Size(433, 30);
+            this.txtSchedule.Size = new System.Drawing.Size(326, 26);
             this.txtSchedule.TabIndex = 22;
             // 
             // txtGia
             // 
             this.txtGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGia.Location = new System.Drawing.Point(1042, 46);
+            this.txtGia.Location = new System.Drawing.Point(688, 37);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(405, 30);
+            this.txtGia.Size = new System.Drawing.Size(305, 26);
             this.txtGia.TabIndex = 21;
             // 
             // txtHLV
@@ -773,17 +827,19 @@ namespace GUI_QLPG
             this.txtHLV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHLV.Enabled = false;
             this.txtHLV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHLV.Location = new System.Drawing.Point(1042, 210);
+            this.txtHLV.Location = new System.Drawing.Point(688, 171);
+            this.txtHLV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHLV.Name = "txtHLV";
-            this.txtHLV.Size = new System.Drawing.Size(405, 30);
+            this.txtHLV.Size = new System.Drawing.Size(305, 26);
             this.txtHLV.TabIndex = 20;
             // 
             // txtTenLop
             // 
             this.txtTenLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenLop.Location = new System.Drawing.Point(235, 5);
+            this.txtTenLop.Location = new System.Drawing.Point(176, 4);
+            this.txtTenLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenLop.Name = "txtTenLop";
-            this.txtTenLop.Size = new System.Drawing.Size(433, 30);
+            this.txtTenLop.Size = new System.Drawing.Size(326, 26);
             this.txtTenLop.TabIndex = 19;
             // 
             // label14
@@ -792,9 +848,10 @@ namespace GUI_QLPG
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(48, 92);
+            this.label14.Location = new System.Drawing.Point(36, 75);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 25);
+            this.label14.Size = new System.Drawing.Size(81, 20);
             this.label14.TabIndex = 17;
             this.label14.Text = "Lịch học:";
             // 
@@ -805,9 +862,10 @@ namespace GUI_QLPG
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(833, 213);
+            this.label15.Location = new System.Drawing.Point(531, 173);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(167, 25);
+            this.label15.Size = new System.Drawing.Size(136, 20);
             this.label15.TabIndex = 16;
             this.label15.Text = "Huấn luyện viên";
             // 
@@ -817,9 +875,10 @@ namespace GUI_QLPG
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(48, 49);
+            this.label16.Location = new System.Drawing.Point(36, 40);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(183, 25);
+            this.label16.Size = new System.Drawing.Size(150, 20);
             this.label16.TabIndex = 15;
             this.label16.Text = "Loại hình lớp học:";
             // 
@@ -830,9 +889,10 @@ namespace GUI_QLPG
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(833, 49);
+            this.label17.Location = new System.Drawing.Point(531, 40);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(52, 25);
+            this.label17.Size = new System.Drawing.Size(42, 20);
             this.label17.TabIndex = 14;
             this.label17.Text = "Giá:";
             // 
@@ -843,9 +903,10 @@ namespace GUI_QLPG
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(833, 10);
+            this.label18.Location = new System.Drawing.Point(531, 8);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(192, 25);
+            this.label18.Size = new System.Drawing.Size(156, 20);
             this.label18.TabIndex = 13;
             this.label18.Text = "Số lượng học viên:";
             // 
@@ -856,9 +917,10 @@ namespace GUI_QLPG
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(833, 90);
+            this.label19.Location = new System.Drawing.Point(531, 73);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(149, 25);
+            this.label19.Size = new System.Drawing.Size(122, 20);
             this.label19.TabIndex = 12;
             this.label19.Text = "Mô tả lớp học:";
             // 
@@ -869,9 +931,10 @@ namespace GUI_QLPG
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(833, 172);
+            this.label20.Location = new System.Drawing.Point(531, 140);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(151, 25);
+            this.label20.Size = new System.Drawing.Size(124, 20);
             this.label20.TabIndex = 11;
             this.label20.Text = "Ngày kết thúc:";
             // 
@@ -882,9 +945,10 @@ namespace GUI_QLPG
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(833, 131);
+            this.label21.Location = new System.Drawing.Point(531, 106);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(147, 25);
+            this.label21.Size = new System.Drawing.Size(120, 20);
             this.label21.TabIndex = 18;
             this.label21.Text = "Ngày bắt đầu:";
             // 
@@ -894,9 +958,10 @@ namespace GUI_QLPG
             this.label22.BackColor = System.Drawing.SystemColors.Control;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(48, 8);
+            this.label22.Location = new System.Drawing.Point(36, 6);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(92, 25);
+            this.label22.Size = new System.Drawing.Size(73, 20);
             this.label22.TabIndex = 10;
             this.label22.Text = "Tên lớp:";
             // 
@@ -908,10 +973,11 @@ namespace GUI_QLPG
             this.SelectColumn});
             this.dgvClass.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvClass.Location = new System.Drawing.Point(0, 0);
+            this.dgvClass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvClass.Name = "dgvClass";
             this.dgvClass.RowHeadersWidth = 51;
             this.dgvClass.RowTemplate.Height = 24;
-            this.dgvClass.Size = new System.Drawing.Size(1496, 404);
+            this.dgvClass.Size = new System.Drawing.Size(1028, 327);
             this.dgvClass.TabIndex = 1;
             this.dgvClass.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClass_CellClick);
             // 
@@ -925,13 +991,14 @@ namespace GUI_QLPG
             // 
             // LopHoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1496, 674);
+            this.ClientSize = new System.Drawing.Size(1028, 548);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LopHoc";
             this.Text = "LopHoc";
             this.Load += new System.EventHandler(this.LopHoc_Load);

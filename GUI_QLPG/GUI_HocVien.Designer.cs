@@ -67,7 +67,7 @@ namespace GUI_QLPG
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.dgvDSHocVien);
-            this.panel2.Location = new System.Drawing.Point(21, 341);
+            this.panel2.Location = new System.Drawing.Point(21, 340);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(930, 280);
             this.panel2.TabIndex = 5;
@@ -139,7 +139,7 @@ namespace GUI_QLPG
             this.dtpNgayTGHV.CustomFormat = "dd/MM/yyyy";
             this.dtpNgayTGHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayTGHV.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayTGHV.Location = new System.Drawing.Point(590, 115);
+            this.dtpNgayTGHV.Location = new System.Drawing.Point(590, 110);
             this.dtpNgayTGHV.Name = "dtpNgayTGHV";
             this.dtpNgayTGHV.Size = new System.Drawing.Size(290, 26);
             this.dtpNgayTGHV.TabIndex = 17;
@@ -185,9 +185,9 @@ namespace GUI_QLPG
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(15, 155);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 20);
+            this.label5.Size = new System.Drawing.Size(120, 20);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Số điện thoại";
+            this.label5.Text = "Số điện thoại:";
             // 
             // dtpNgaySinhHV
             // 
@@ -290,9 +290,9 @@ namespace GUI_QLPG
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(455, 75);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 20);
+            this.label7.Size = new System.Drawing.Size(69, 20);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Địa chỉ";
+            this.label7.Text = "Địa chỉ:";
             // 
             // txtEmailHV
             // 
@@ -325,9 +325,9 @@ namespace GUI_QLPG
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(455, 35);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 20);
+            this.label6.Size = new System.Drawing.Size(58, 20);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Email";
+            this.label6.Text = "Email:";
             // 
             // label2
             // 
@@ -378,6 +378,7 @@ namespace GUI_QLPG
             this.btnGoiTap.TabIndex = 8;
             this.btnGoiTap.Text = "Gói tập";
             this.btnGoiTap.UseVisualStyleBackColor = false;
+            this.btnGoiTap.Click += new System.EventHandler(this.btnGoiTap_Click);
             // 
             // label1
             // 
@@ -408,7 +409,7 @@ namespace GUI_QLPG
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GUI_HocVien";
             this.Text = "HocVien";
             this.Load += new System.EventHandler(this.GUI_HocVien_Load);

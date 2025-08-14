@@ -71,3 +71,6 @@ D:\BT_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.csproj.CoreCompileInputs
 D:\BT_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.csproj.Up2Date
 D:\BT_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.exe
 D:\BT_LTCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.pdb
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.GUI_GoiTap.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.GUI_ThanhToan.resources
+E:\University_IT\Tam\LapTrinhCSDL\QuanLyPhongGym\GUI_QLPG\obj\Debug\GUI_QLPG.GUI_HoaDonThanhToan.resources

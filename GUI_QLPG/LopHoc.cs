@@ -617,6 +617,7 @@ namespace GUI_QLPG
 
             }
         }
+
         private void dgvClass_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (isSelectLopHoc && e.RowIndex >= 0)
@@ -642,10 +643,7 @@ namespace GUI_QLPG
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
-        }
-
-
-      
+        }      
 
         private void SearchClasses()
         {
@@ -734,9 +732,6 @@ namespace GUI_QLPG
             DataGridViewStyleHelper.FormatClassDGV(dgvClass);
         }
 
-
-
-
         private void btTimKiem_Click(object sender, EventArgs e)
         {
             SearchClasses();
@@ -766,7 +761,5 @@ namespace GUI_QLPG
                 MessageBox.Show("Danh sách học viên đã được cập nhật.");
             }
         }
-
-        
     }
 }

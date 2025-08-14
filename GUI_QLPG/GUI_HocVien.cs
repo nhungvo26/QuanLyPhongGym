@@ -145,5 +145,11 @@ namespace GUI_QLPG
             }
             dgvDSHocVien.DataSource = busHocVien.timKiemHocVien(tuKhoa);
         }
+
+        private void btnGoiTap_Click(object sender, EventArgs e)
+        {
+            GUI_GoiTap form = new GUI_GoiTap();
+            form.Show();
+        }
     }
 }

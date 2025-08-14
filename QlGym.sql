@@ -158,29 +158,36 @@ CREATE TABLE HocVien_GoiTap (
 		loaiGoiTap nvarchar(20) CHECK (loaiGoiTap IN (N'1 tháng', N'3 tháng', N'6 tháng', N'12 tháng')),
 		ngayBatDau datetime,
 		ngayKetThuc datetime,
-		trangThai nvarchar(20) CHECK (trangThai IN (N'Còn hiệu lực', N'Chưa có gói', N'Hết hạn')),
+		donGia decimal CHECK(donGia >= 0),
 		CHECK(ngayKetThuc > ngayBatDau)
 )
 GO
 
 ---------------NHẬP DỮ LIỆU---------------
 INSERT INTO HocVien_GoiTap VALUES 
-    (1, NULL, NULL, NULL, N'Chưa có gói'),
-	(2, NULL, NULL, NULL, N'Chưa có gói')
+    (1, N'1 tháng', '2025-03-01', '2025-03-31', 500000),
+	(2, N'12 tháng', '2024-05-01', '2024-05-31', 5000000)
 GO
 
 
 ---------------BẢNG HÓA ĐƠN THANH TOÁN---------------
 CREATE TABLE HoaDonThanhToan (
 		idHoaDon int IDENTITY(1,1) PRIMARY KEY,
+		idHocVien int FOREIGN KEY REFERENCES HocVien(idHocVien) ON DELETE CASCADE,
 		donGia decimal,
 		phuongThucThanhToan nvarchar(20) CHECK (phuongThucThanhToan IN (N'Tiền mặt', N'Chuyển khoản')),	
 		loaiThanhToan nvarchar(20) CHECK (loaiThanhToan IN (N'Gói tập', N'Lớp học')),	
 		ngayThanhToan datetime DEFAULT GETDATE(),
-		trangThai nvarchar(20),
-		idDKLH int,
-		idHocVien int FOREIGN KEY REFERENCES HocVien(idHocVien) ON DELETE CASCADE
+		idDKLH int
 )
+GO
+
+---------------NHẬP DỮ LIỆU---------------
+INSERT INTO HoaDonThanhToan VALUES 
+    (1, 500000, N'Tiền mặt', N'Lớp học', '2024-08-05', 2),
+	(1, 500000, N'Chuyển khoản', N'Gói tập', '2025-03-01', NULL),
+	(2, 500000, N'Chuyển khoản', N'Lớp học', '2024-08-05', 2),
+	(2, 5000000, N'Tiền mặt', N'Gói tập', '2024-05-01', NULL)
 GO
 
 ---------------BẢNG THỂ LOẠI_THIẾT BỊ---------------

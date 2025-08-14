@@ -45,6 +45,7 @@
     <Compile Include="DTO_LopHoc.cs" />
     <Compile Include="DTO_StudentCountByMonth.cs" />
     <Compile Include="DTO_StudentRatioByCategory.cs" />
+    <Compile Include="GoiTap.cs" />
     <Compile Include="HocVien.cs" />
     <Compile Include="NguoiDung.cs" />
     <Compile Include="PhongTap.cs" />
