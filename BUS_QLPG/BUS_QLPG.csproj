@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS_DangNhap.cs" />
+    <Compile Include="BUS_GoiTap.cs" />
     <Compile Include="BUS_HLV.cs" />
     <Compile Include="BUS_HocVien.cs" />
     <Compile Include="BUS_HocVien_LopHoc.cs" />

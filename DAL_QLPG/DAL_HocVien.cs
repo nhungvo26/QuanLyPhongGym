@@ -35,7 +35,7 @@ namespace DAL_QLPG
                     new SqlParameter("sdt", hv.sdt),
                     new SqlParameter("email", hv.email),
                     new SqlParameter("diaChi", hv.diaChi),
-                    new SqlParameter("ngayThamGia", hv.ngayThamGia),
+                    new SqlParameter("ngayThamGia", hv.ngayThamGia)
                 };
                 return ExecuteSQL("ThemHocVien", para);
             }
@@ -58,7 +58,7 @@ namespace DAL_QLPG
                     new SqlParameter("sdt", hv.sdt),
                     new SqlParameter("email", hv.email),
                     new SqlParameter("diaChi", hv.diaChi),
-                    new SqlParameter("ngayThamGia", hv.ngayThamGia),
+                    new SqlParameter("ngayThamGia", hv.ngayThamGia)
                 };
                 return ExecuteSQL("SuaHocVien", para);
             }
@@ -90,7 +90,7 @@ namespace DAL_QLPG
             {
                 SqlParameter[] para =
                 {
-                    new SqlParameter("@tuKhoa", tuKhoa),
+                    new SqlParameter("@tuKhoa", tuKhoa)
                 };
                 return GetDataTable("TimKiemHocVien", para);
             }
