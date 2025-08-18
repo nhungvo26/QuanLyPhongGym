@@ -162,8 +162,8 @@ namespace GUI_QLPG
                 //int idTB = Convert.ToInt32(dgvDSThietBi.CurrentRow.Cells["idThietBi"].Value);
                 DataGridViewRow row = dgvDSThietBi.SelectedRows[0];
                 int idTB = Convert.ToInt32(row.Cells[0].Value.ToString());
-                //string tenTB = row.Cells[1].Value.ToString();
-                if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?",
+                string tenTB = row.Cells[1].Value.ToString();
+                if (MessageBox.Show($"Bạn có chắc chắn muốn xóa thiết bị {tenTB} không?",
                     "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     int kq = busThietBi.xoaThietBi(idTB);

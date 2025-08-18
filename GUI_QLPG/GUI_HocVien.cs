@@ -16,6 +16,7 @@ namespace GUI_QLPG
     public partial class GUI_HocVien : Form
     {
         BUS_HocVien busHocVien = new BUS_HocVien();
+        BUS_GoiTap busGoiTap = new BUS_GoiTap();
 
         public GUI_HocVien()
         {
@@ -34,17 +35,24 @@ namespace GUI_QLPG
 
         private void dgvDSHocVien_Click(object sender, EventArgs e)
         {
-            //Lấy row hiện tại 
-            DataGridViewRow row = dgvDSHocVien.SelectedRows[0];
-            //Chuyển các giá trị lên form
-            txtTenHV.Text = row.Cells[1].Value.ToString();
-            rbNamHV.Checked = row.Cells[2].Value.ToString() == "Nam";
-            rbNuHV.Checked = row.Cells[2].Value.ToString() == "Nữ";
-            dtpNgaySinhHV.Value = Convert.ToDateTime(row.Cells[3].Value);
-            txtSdtHV.Text = row.Cells[4].Value.ToString();
-            txtEmailHV.Text = row.Cells[5].Value.ToString();
-            txtDiaChiHV.Text = row.Cells[6].Value.ToString();
-            dtpNgayTGHV.Value = Convert.ToDateTime(row.Cells[7].Value);
+            try
+            {
+                //Lấy row hiện tại 
+                DataGridViewRow row = dgvDSHocVien.SelectedRows[0];
+                //Chuyển các giá trị lên form
+                txtTenHV.Text = row.Cells[1].Value.ToString();
+                rbNamHV.Checked = row.Cells[2].Value.ToString() == "Nam";
+                rbNuHV.Checked = row.Cells[2].Value.ToString() == "Nữ";
+                dtpNgaySinhHV.Value = Convert.ToDateTime(row.Cells[3].Value);
+                txtSdtHV.Text = row.Cells[4].Value.ToString();
+                txtEmailHV.Text = row.Cells[5].Value.ToString();
+                txtDiaChiHV.Text = row.Cells[6].Value.ToString();
+                dtpNgayTGHV.Value = Convert.ToDateTime(row.Cells[7].Value);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
         }
 
         private void btnThemHV_Click(object sender, EventArgs e)
@@ -104,18 +112,25 @@ namespace GUI_QLPG
             {
                 DataGridViewRow row = dgvDSHocVien.SelectedRows[0];
                 int idHV = Convert.ToInt32(row.Cells[0].Value.ToString());
-                if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?",
+                string tenHV = row.Cells[1].Value.ToString();
+                if (busHocVien.kiemTraGoiTapHieuLuc(idHV) > 0)
+                {
+                    MessageBox.Show($"Không thể xóa học viên {tenHV} vì vẫn đang có gói tập còn hiệu lực.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (MessageBox.Show($"Bạn có chắc chắn muốn xóa học viên {tenHV} không?",
                     "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     int kq = busHocVien.xoaHocVien(idHV);
                     if (kq > 0)
                     {
-                        MessageBox.Show("Xóa học viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show($"Xóa học viên {tenHV} thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         hienThiDSHocVien();
                     }
                     else
                     {
-                        MessageBox.Show("Xóa học viên thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show($"Xóa học viên {tenHV} thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -147,9 +162,38 @@ namespace GUI_QLPG
         }
 
         private void btnGoiTap_Click(object sender, EventArgs e)
-        {
-            GUI_GoiTap form = new GUI_GoiTap();
-            form.Show();
+        {            
+            if (dgvDSHocVien.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dgvDSHocVien.SelectedRows[0];
+                int idHV = Convert.ToInt32(row.Cells[0].Value);
+                string tenHV = row.Cells[1].Value.ToString();
+
+                GUI_GoiTap formGT = new GUI_GoiTap(idHV, tenHV);
+
+                if (formGT.ShowDialog() == DialogResult.OK)
+                {
+                    // Nếu thêm gói tập thành công, thêm vào database
+                    GoiTap goiTapMoi = formGT.goiTapMoi;
+                    if (goiTapMoi != null)
+                    {
+                        int kq = busGoiTap.themGoiTap(goiTapMoi);
+                        if (kq > 0)
+                        {
+                            MessageBox.Show($"Đã thêm gói tập {goiTapMoi.loaiGoiTap} cho học viên {tenHV} thành công!",
+                                "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Thêm gói tập thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                }
+            }            
+            else
+            {
+                MessageBox.Show("Hãy chọn học viên để thêm gói tập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

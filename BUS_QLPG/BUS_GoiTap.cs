@@ -38,11 +38,6 @@ namespace BUS_QLPG
             return dalGoiTap.layGoiTapHienTai(idHV);
         }
 
-        public int kiemTraGoiTapHieuLuc(int idHV)
-        {
-            return dalGoiTap.kiemTraGoiTapHieuLuc(idHV);
-        }
-
         public bool con1TuanTruocHetHan(GoiTap gt)
         {
             return (gt != null && (gt.ngayKetThuc - DateTime.Now).TotalDays <= 7);

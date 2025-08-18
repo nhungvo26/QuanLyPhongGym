@@ -132,8 +132,12 @@ GO
 ---------------NHẬP DỮ LIỆU---------------
 INSERT INTO HocVien VALUES 
     (N'Nguyễn A', N'Nữ', '1994-01-10','0983482345','nguyena@gmail.com',N'Quận 1, TP.HCM','2024-05-10 06:00:00'),
-	(N'Phạm Đình B', N'Nam', '2000-10-06', '0338576948','phamb@gmail.com',N'Bình Thạnh, TP.HCM','2024-06-06 08:00:00')
+	(N'Phạm Đình B', N'Nam', '2000-10-06', '0338576948','phamb@gmail.com',N'Bình Thạnh, TP.HCM','2024-06-06 08:00:00'),
+	(N'Trần Ngô Bình', N'Nam', '1997-07-09','0989274659','tranbinh@gmail.com',N'Quận 12, TP.HCM','2025-04-10 09:30:00'),
+	(N'Phan Thanh', N'Nam', '2001-11-12', '0339274651','phanthanh@gmail.com',N'Tân Phú, TP.HCM','2025-06-19 14:00:00'),
+	(N'Đinh Ngọc', N'Nữ', '2002-01-22', '0330946527','dinhngoc@gmail.com',N'Quận 5, TP.HCM','2025-02-11 15:15:00')
 GO
+
 
 ---------------BẢNG HỌC VIÊN_LỚP HỌC---------------
 CREATE TABLE HocVien_LopHoc (
@@ -166,9 +170,10 @@ GO
 ---------------NHẬP DỮ LIỆU---------------
 INSERT INTO HocVien_GoiTap VALUES 
     (1, N'1 tháng', '2025-03-01', '2025-03-31', 500000),
-	(2, N'12 tháng', '2024-05-01', '2024-05-31', 5000000)
+	(2, N'12 tháng', '2024-05-01', '2024-05-31', 5000000),
+	(4, N'6 tháng', '2025-06-01', '2025-12-31', 2800000),
+	(5, N'3 tháng', '2025-04-01', '2025-07-31', 1300000)
 GO
-
 
 ---------------BẢNG HÓA ĐƠN THANH TOÁN---------------
 CREATE TABLE HoaDonThanhToan (

@@ -48,6 +48,7 @@
     <Compile Include="DAL_HocVien_LopHoc.cs" />
     <Compile Include="DAL_LopHoc.cs" />
     <Compile Include="DAL_NhanVien.cs" />
+    <Compile Include="DAL_ThanhToan.cs" />
     <Compile Include="DAL_TheLoai_LopHoc .cs" />
     <Compile Include="DAL_ThietBi.cs" />
     <Compile Include="DAL_ThongKe.cs" />

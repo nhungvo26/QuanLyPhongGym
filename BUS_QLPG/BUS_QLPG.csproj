@@ -48,6 +48,7 @@
     <Compile Include="BUS_HocVien_LopHoc.cs" />
     <Compile Include="BUS_LopHoc.cs" />
     <Compile Include="BUS_NhanVien.cs" />
+    <Compile Include="BUS_ThanhToan.cs" />
     <Compile Include="BUS_TheLoai_LopHoc.cs" />
     <Compile Include="BUS_ThietBi.cs" />
     <Compile Include="BUS_ThongKe.cs" />
