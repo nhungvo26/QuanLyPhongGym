@@ -118,6 +118,23 @@ namespace DAL_QLPG
             };
             return GetDataTable("usp_LayHocVienTheoLop", para);
         }
+
+        public int kiemTraGoiTapHieuLuc(int idHV)
+        {
+            try
+            {
+                SqlParameter[] para =
+                {
+                    new SqlParameter("idHocVien", idHV),
+                };
+                DataTable kq = GetDataTable("KiemTraGoiTapHieuLuc", para);
+                return Convert.ToInt32(kq.Rows[0]["soLuong"]);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
 

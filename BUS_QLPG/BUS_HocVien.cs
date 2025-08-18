@@ -45,6 +45,11 @@ namespace BUS_QLPG
         {
             return dalHocVien.LayHocVienTheoLop(idLopHoc);
         }
+
+        public int kiemTraGoiTapHieuLuc(int idHV)
+        {
+            return dalHocVien.kiemTraGoiTapHieuLuc(idHV);
+        }
     }
 }
 

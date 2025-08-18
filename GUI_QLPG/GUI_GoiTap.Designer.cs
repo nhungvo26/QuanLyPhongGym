@@ -70,7 +70,7 @@ namespace GUI_QLPG
             this.dgvDSGoiTap.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSGoiTap.Size = new System.Drawing.Size(900, 250);
             this.dgvDSGoiTap.TabIndex = 0;
-            this.dgvDSGoiTap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSGoiTap_CellClick);
+            this.dgvDSGoiTap.Click += new System.EventHandler(this.dgvDSGoiTap_Click);
             // 
             // panel1
             // 
@@ -180,6 +180,7 @@ namespace GUI_QLPG
             this.btnLamMoiGT.TabIndex = 9;
             this.btnLamMoiGT.Text = "Làm mới";
             this.btnLamMoiGT.UseVisualStyleBackColor = false;
+            this.btnLamMoiGT.Click += new System.EventHandler(this.btnLamMoiGT_Click);
             // 
             // btnXoaGT
             // 
@@ -197,6 +198,7 @@ namespace GUI_QLPG
             this.btnXoaGT.TabIndex = 9;
             this.btnXoaGT.Text = "Xóa";
             this.btnXoaGT.UseVisualStyleBackColor = false;
+            this.btnXoaGT.Click += new System.EventHandler(this.btnXoaGT_Click);
             // 
             // btnThemGT
             // 
@@ -214,6 +216,7 @@ namespace GUI_QLPG
             this.btnThemGT.TabIndex = 9;
             this.btnThemGT.Text = "Thêm ";
             this.btnThemGT.UseVisualStyleBackColor = false;
+            this.btnThemGT.Click += new System.EventHandler(this.btnThemGT_Click);
             // 
             // label7
             // 

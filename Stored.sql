@@ -202,7 +202,7 @@ GO
 CREATE PROC XemDSHVDKGoiTap
 AS
 BEGIN
-    SELECT hv.idHocVien, hv.tenHocVien, gt.loaiGoiTap, gt.ngayBatDau, gt.ngayKetThuc, gt.donGia
+    SELECT hv.idHocVien, hv.tenHocVien, gt.loaiGoiTap, gt.donGia, gt.ngayBatDau, gt.ngayKetThuc
     FROM HocVien_GoiTap gt, HocVien hv
     WHERE gt.idHocVien = hv.idHocVien
 END
@@ -255,7 +255,7 @@ END
 GO
 
 ---------------KIỂM TRA GÓI TẬP CỦA HỌC VIÊN CÒN HIỆU LỰC---------------
-CREATE OR ALTER PROC KiemTraGoiTapHieuLuc
+CREATE PROC KiemTraGoiTapHieuLuc
 @idHocVien int
 AS
 BEGIN
@@ -685,5 +685,23 @@ BEGIN
     SET NOCOUNT ON;
 
     INSERT INTO NhanVien (idNguoiDung, vaiTro) VALUES (@UserId, @Role);
+END
+GO
+
+---------------THANH TOÁN---------------
+---------------XEM DANH SÁCH THANH TOÁN---------------
+CREATE PROC XemIdHVThanhToan
+@idHocVien int
+AS
+BEGIN
+	SELECT * FROM HoaDonThanhToan
+	WHERE idHocVien = @idHocVien
+END
+GO
+
+CREATE PROC XemThanhToan
+AS
+BEGIN
+	SELECT * FROM HoaDonThanhToan
 END
 GO

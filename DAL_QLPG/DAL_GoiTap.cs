@@ -119,50 +119,5 @@ namespace DAL_QLPG
                 throw ex;
             }
         }
-
-        public DTO_LopHoc LayLopHocTheoID(int id)
-        {
-            DTO_LopHoc lop = null;
-            try
-            {
-                SqlParameter[] para = { new SqlParameter("idLopHoc", id) };
-                DataTable dt = GetDataTable("usp_LayLopHocTheoID", para);
-
-                if (dt.Rows.Count > 0)
-                {
-                    DataRow row = dt.Rows[0];
-                    lop = new DTO_LopHoc
-                    {
-                        idLopHoc = Convert.ToInt32(row["idLopHoc"]),
-                        tenLopHoc = row["tenLopHoc"].ToString(),
-                        idTLLH = Convert.ToInt32(row["idTLLH"]),                        
-                        ngayKetThuc = Convert.ToDateTime(row["ngayKetThuc"]),
-                        moTa = row["moTa"] == DBNull.Value ? null : row["moTa"].ToString(),
-                        idPhongTap = row["idPhongTap"] == DBNull.Value ? 0 : Convert.ToInt32(row["idPhongTap"])
-                    };
-                }
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return lop;
-        }
-
-        public int kiemTraGoiTapHieuLuc(int idHV)
-        {
-            try
-            {
-                SqlParameter[] para =
-                {
-                    new SqlParameter("idHocVien", idHV),
-                };
-                return ExecuteSQL("KiemTraGoiTapHieuLuc", para);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
     }
 }

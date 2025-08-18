@@ -33,12 +33,12 @@ namespace GUI_QLPG
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvDSThanhToan = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTimKiemTT = new System.Windows.Forms.Button();
+            this.btnLichSuGiaoDich = new System.Windows.Forms.Button();
+            this.btnNhacNhoTT = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTimKiemTT = new System.Windows.Forms.TextBox();
-            this.btnTimKiemTT = new System.Windows.Forms.Button();
-            this.btnNhacNhoTT = new System.Windows.Forms.Button();
-            this.btnLichSuGiaoDich = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSThanhToan)).BeginInit();
             this.panel1.SuspendLayout();
@@ -73,8 +73,52 @@ namespace GUI_QLPG
             this.panel1.Controls.Add(this.txtTimKiemTT);
             this.panel1.Location = new System.Drawing.Point(17, 22);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(930, 300);
+            this.panel1.Size = new System.Drawing.Size(930, 133);
             this.panel1.TabIndex = 6;
+            // 
+            // btnTimKiemTT
+            // 
+            this.btnTimKiemTT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTimKiemTT.BackgroundImage")));
+            this.btnTimKiemTT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTimKiemTT.Location = new System.Drawing.Point(628, 17);
+            this.btnTimKiemTT.Name = "btnTimKiemTT";
+            this.btnTimKiemTT.Size = new System.Drawing.Size(30, 28);
+            this.btnTimKiemTT.TabIndex = 11;
+            this.btnTimKiemTT.UseVisualStyleBackColor = true;
+            // 
+            // btnLichSuGiaoDich
+            // 
+            this.btnLichSuGiaoDich.BackColor = System.Drawing.Color.Transparent;
+            this.btnLichSuGiaoDich.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLichSuGiaoDich.FlatAppearance.BorderColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnLichSuGiaoDich.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnLichSuGiaoDich.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnLichSuGiaoDich.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLichSuGiaoDich.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichSuGiaoDich.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnLichSuGiaoDich.Location = new System.Drawing.Point(380, 90);
+            this.btnLichSuGiaoDich.Name = "btnLichSuGiaoDich";
+            this.btnLichSuGiaoDich.Size = new System.Drawing.Size(200, 30);
+            this.btnLichSuGiaoDich.TabIndex = 8;
+            this.btnLichSuGiaoDich.Text = "Lịch sử giao dịch";
+            this.btnLichSuGiaoDich.UseVisualStyleBackColor = false;
+            // 
+            // btnNhacNhoTT
+            // 
+            this.btnNhacNhoTT.BackColor = System.Drawing.Color.Transparent;
+            this.btnNhacNhoTT.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNhacNhoTT.FlatAppearance.BorderColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnNhacNhoTT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnNhacNhoTT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnNhacNhoTT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhacNhoTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhacNhoTT.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnNhacNhoTT.Location = new System.Drawing.Point(690, 90);
+            this.btnNhacNhoTT.Name = "btnNhacNhoTT";
+            this.btnNhacNhoTT.Size = new System.Drawing.Size(140, 30);
+            this.btnNhacNhoTT.TabIndex = 8;
+            this.btnNhacNhoTT.Text = "Nhắc nhở";
+            this.btnNhacNhoTT.UseVisualStyleBackColor = false;
             // 
             // btnThanhToan
             // 
@@ -113,50 +157,6 @@ namespace GUI_QLPG
             this.txtTimKiemTT.Size = new System.Drawing.Size(342, 26);
             this.txtTimKiemTT.TabIndex = 4;
             // 
-            // btnTimKiemTT
-            // 
-            this.btnTimKiemTT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTimKiemTT.BackgroundImage")));
-            this.btnTimKiemTT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTimKiemTT.Location = new System.Drawing.Point(628, 17);
-            this.btnTimKiemTT.Name = "btnTimKiemTT";
-            this.btnTimKiemTT.Size = new System.Drawing.Size(30, 28);
-            this.btnTimKiemTT.TabIndex = 11;
-            this.btnTimKiemTT.UseVisualStyleBackColor = true;
-            // 
-            // btnNhacNhoTT
-            // 
-            this.btnNhacNhoTT.BackColor = System.Drawing.Color.Transparent;
-            this.btnNhacNhoTT.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNhacNhoTT.FlatAppearance.BorderColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnNhacNhoTT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnNhacNhoTT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnNhacNhoTT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNhacNhoTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhacNhoTT.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnNhacNhoTT.Location = new System.Drawing.Point(690, 90);
-            this.btnNhacNhoTT.Name = "btnNhacNhoTT";
-            this.btnNhacNhoTT.Size = new System.Drawing.Size(140, 30);
-            this.btnNhacNhoTT.TabIndex = 8;
-            this.btnNhacNhoTT.Text = "Nhắc nhở";
-            this.btnNhacNhoTT.UseVisualStyleBackColor = false;
-            // 
-            // btnLichSuGiaoDich
-            // 
-            this.btnLichSuGiaoDich.BackColor = System.Drawing.Color.Transparent;
-            this.btnLichSuGiaoDich.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLichSuGiaoDich.FlatAppearance.BorderColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnLichSuGiaoDich.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnLichSuGiaoDich.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnLichSuGiaoDich.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLichSuGiaoDich.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLichSuGiaoDich.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnLichSuGiaoDich.Location = new System.Drawing.Point(380, 90);
-            this.btnLichSuGiaoDich.Name = "btnLichSuGiaoDich";
-            this.btnLichSuGiaoDich.Size = new System.Drawing.Size(200, 30);
-            this.btnLichSuGiaoDich.TabIndex = 8;
-            this.btnLichSuGiaoDich.Text = "Lịch sử giao dịch";
-            this.btnLichSuGiaoDich.UseVisualStyleBackColor = false;
-            // 
             // GUI_ThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +169,7 @@ namespace GUI_QLPG
             this.DoubleBuffered = true;
             this.Name = "GUI_ThanhToan";
             this.Text = "GUI_ThanhToan";
+            this.Load += new System.EventHandler(this.GUI_ThanhToan_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSThanhToan)).EndInit();
             this.panel1.ResumeLayout(false);

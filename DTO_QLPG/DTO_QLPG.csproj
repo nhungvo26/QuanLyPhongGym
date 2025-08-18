@@ -47,6 +47,7 @@
     <Compile Include="DTO_StudentRatioByCategory.cs" />
     <Compile Include="GoiTap.cs" />
     <Compile Include="HocVien.cs" />
+    <Compile Include="ThanhToan.cs" />
     <Compile Include="TheLoaiGoiTap.cs" />
     <Compile Include="NguoiDung.cs" />
     <Compile Include="PhongTap.cs" />
