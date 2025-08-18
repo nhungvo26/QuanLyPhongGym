@@ -15,4 +15,14 @@ namespace DTO_QLPG
         public DateTime ngayKetThuc { get; set; }
         public decimal donGia { get; set; }
     }
+
+    public class GoiTapHocVien
+    {
+        public int idHocVien { get; set; }
+        public string tenHocVien { get; set; }
+        public string loaiGoiTap { get; set; }
+        public DateTime ngayBatDau { get; set; }
+        public DateTime ngayKetThuc { get; set; }
+        public decimal donGia { get; set; }
+    }
 }

@@ -110,6 +110,7 @@ namespace GUI_QLPG
             this.cbLoaiGT.Name = "cbLoaiGT";
             this.cbLoaiGT.Size = new System.Drawing.Size(290, 28);
             this.cbLoaiGT.TabIndex = 18;
+            this.cbLoaiGT.SelectedIndexChanged += new System.EventHandler(this.cbLoaiGT_SelectedIndexChanged);
             // 
             // dtpNgayBatDauGT
             // 
@@ -278,6 +279,7 @@ namespace GUI_QLPG
             this.Name = "GUI_GoiTap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GUI_GoiTap";
+            this.Load += new System.EventHandler(this.GUI_GoiTap_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSGoiTap)).EndInit();
             this.panel1.ResumeLayout(false);

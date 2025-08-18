@@ -1,6 +1,8 @@
 ﻿USE QlGym
 GO
 
+
+---------------ĐĂNG NHẬP---------------
 CREATE PROC KiemTraDangNhap
 @username nvarchar(20),
 @password nvarchar(20)
@@ -194,6 +196,75 @@ BEGIN
 	WHERE tenHocVien LIKE N'%' + @tuKhoa + '%'
 END
 GO
+
+---------------HỌC VIÊN ĐĂNG KÝ GÓI TẬP---------------
+---------------XEM DANH SÁCH HỌC VIÊN ĐĂNG KÝ GÓI TẬP---------------
+CREATE PROC XemDSHVDKGoiTap
+AS
+BEGIN
+    SELECT hv.idHocVien, hv.tenHocVien, gt.loaiGoiTap, gt.ngayBatDau, gt.ngayKetThuc, gt.donGia
+    FROM HocVien_GoiTap gt, HocVien hv
+    WHERE gt.idHocVien = hv.idHocVien
+END
+GO
+
+---------------XEM LOẠI GÓI TẬP---------------
+CREATE PROC XemLoaiGoiTap
+AS
+BEGIN
+    SELECT DISTINCT loaiGoiTap, MIN(donGia) AS donGia
+    FROM HocVien_GoiTap
+    GROUP BY loaiGoiTap
+END
+GO
+
+---------------THÊM GÓI TẬP---------------
+CREATE PROC ThemGoiTap
+@idHocVien int,
+@loaiGoiTap nvarchar(20),
+@ngayBatDau datetime,
+@ngayKetThuc datetime,
+@donGia decimal 
+AS
+BEGIN
+	INSERT INTO HocVien_GoiTap (idHocVien, loaiGoiTap, ngayBatDau, ngayKetThuc, donGia)
+	VALUES (@idHocVien, @loaiGoiTap, @ngayBatDau, @ngayKetThuc, @donGia)
+END
+GO
+
+---------------XÓA GÓI TẬP---------------
+CREATE PROC XoaGoiTap
+@idHocVien int
+AS
+BEGIN
+	DELETE FROM HocVien_GoiTap
+	WHERE idHocVien = @idHocVien
+END
+GO
+
+---------------LẤY GÓI TẬP CỦA HỌC VIÊN HIỆN TẠI ---------------
+CREATE PROC LayGoiTapHienTai
+@idHocVien int
+AS
+BEGIN
+    SELECT TOP 1 * 
+    FROM HocVien_GoiTap
+    WHERE idHocVien = @idHocVien
+    ORDER BY ngayKetThuc DESC
+END
+GO
+
+---------------KIỂM TRA GÓI TẬP CỦA HỌC VIÊN CÒN HIỆU LỰC---------------
+CREATE OR ALTER PROC KiemTraGoiTapHieuLuc
+@idHocVien int
+AS
+BEGIN
+    SELECT COUNT(*) AS soLuong
+    FROM HocVien_GoiTap
+    WHERE idHocVien = @idHocVien AND ngayKetThuc >= GETDATE()
+END
+GO
+
 ---- LẤY HV CHƯA CÓ LỚP-------
 CREATE PROCEDURE sp_GetHocVienChuaCoLop
 AS
